@@ -1,0 +1,13 @@
+span{
+    background-color: black;
+    color: white;
+}
+
+.hello span{
+    background-color: white;
+    color: red;
+}
+
+script p span{
+    display: block;
+}

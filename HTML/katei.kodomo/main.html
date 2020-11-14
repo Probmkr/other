@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<title>単元学習</title>
+<link href="/pc/student/katei/css/default.css?_v=11" media="all" rel="stylesheet" type="text/css" />
+<link href="/pc/student/katei/css/katei_s_common.css?_v=11" media="all" rel="stylesheet" type="text/css" />
+<!--[if lte IE 9]><style type="text/css" media="screen">
+button { background-color: #59b1d7; }
+</style><![endif]-->
+<!--[if lte IE 9]><style type="text/css" media="screen">
+button[disabled] { background-color: #b3e7f0; }
+</style><![endif]-->
+<!--[if lte IE 9]><style type="text/css" media="screen">
+button { behavior: url(/pc/student/css/PIE.htc); }
+</style><![endif]-->
+<!--[if lte IE 8]><style type="text/css" media="screen">
+img.f_posi { top: -70px; } span.button_text_l { top: -50px; } span.button_text_s { top: 5px; }
+</style><![endif]-->
+<!--[if lte IE 8]><style type="text/css" media="screen">
+img.g_posi { top: -30px; } span.g_button_text_l { top: -15px; }
+</style><![endif]-->
+<style type="text/css" media="screen">
+<!--
+#copyright {	margin: 0 20px 20px 0;	font-size: 77%;	color: #666;	text-align: right;}
+-->
+</style>
+<script src="/pc/student/js/jquery.min.js?_v=11"></script>
+<script src="/pc/student/js/jquery.easing.js?_v=11"></script>
+<script src="/pc/student/js/common.js"></script>
+
+<script type="text/javascript" src="/pc/student/js/unit_kyozaisellist4katei.js?_v=11"></script>
+<script type="text/javascript" src="https://katei.kodomo.ne.jp/cc/LinesCrypt.js"></script>
+<script type="text/javascript" src="/pc/student/katei/js/jump2frontline.js"></script>
+<!--[if lt IE 9]>
+<script src="/pc/student/js/html5.js"></script>
+<![endif]-->
+<meta id="vp" name="viewport" content="width=980">
+<meta name="format-detection" content="telephone=no">
+</head>
+<body class="kougakunen">
+
+<script>
+    var schoolid, usertype, userid, userpw, zaitaku, username, classid;
+    var params;
+
+    decodeAndEval('ICAgICAgICBwYXJhbXMgPQogICAgICAgIFsKICAgICAgICAgICAgWyJtb2RlIiwgIm1haW5faGVhZCJdLAogICAgICAgICAgICBbImFJRCIsIDE0MTExNDUzXSwKICAgICAgICAgICAgWyJhUGFzcyIsICI5NjQ5Il0sCiAgICAgICAgICAgIFsic0lEIiwgMzY2XSwKICAgICAgICAgICAgWyJhVHlwZSIsIDJdLAogICAgICAgICAgICBbInphaXRha3UiLCAwXQogICAgICAgIF07');
+
+
+    WriteCryptForm();
+    var win_ela2006 = null;
+    
+    $(function(){
+        $("#btn-all-finish,#logo").click(function(){
+            ;
+            
+            jump2frontline(params);
+        });
+    });
+    
+</script>   
+
+<!-- ヘッダ部分 -->
+<!--20190613 mod Takahashi-->
+			<div id="header">
+				<div id="logo" title="メニューにもどります"></div>
+				<div id="h-info">
+					<ul>
+						<li id="static-line-l"></li>
+						<li id="static-line-c">
+							<span>&nbsp;こんにちは、周 詩喬さん</span>
+						</li>
+						<li id="static-line-r">
+						    <div id="btn-all-finish"></div>
+						</li>
+						<li id="date-info-line">
+							<!--<div id="date-field">今日は <ruby>2020<rt></rt></ruby><ruby>年<rt>ねん</ruby><ruby>08<rt></rt></ruby><ruby>月<rt>がつ</ruby><ruby>30<rt></rt></ruby><ruby>日<rt>にち</ruby> です</div>-->
+							<div id="date-field"><ruby>今日<rt>きょう</ruby><ruby>は<rt></rt></ruby> <ruby>2020<rt></rt></ruby><ruby>年<rt>ねん</ruby><ruby>08<rt></rt></ruby><ruby>月<rt>がつ</ruby><ruby>30<rt></rt></ruby><ruby>日<rt>にち</ruby> <ruby>です<rt></rt></ruby></div>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- Header -->
+
+<!-- ヘッダ部分 -->
+<div id="container">
+<div style="margin-bottom:10px;margin-top:10px;">
+    <button id="btn_back" class="btn_back_off" onmouseout="className='btn_back_off';" onmouseover="className='btn_back_on';" onclick="movepage('tangenlist');"></button>
+</div>
+
+<script>
+function movepage(parm) {
+		var url;
+		switch (parm) {
+			case 'kstudy':
+				url = "/pc/student/kstudy/challenge/";
+				break;
+			case 'themeindex':
+				url = "/pc/student/theme/index/";
+				break;
+			case 'themesel':
+				url = "/pc/student/theme/themesel/themeid/1846";
+				break;
+			case 'subjectlist':
+				url = "/pc/student/unit/subjectlist/grade/7";
+				break;
+			case 'tangenlist':
+				url = "/pc/student/unit/tangenlist/on_button/12/grade/7";
+				break;
+
+            case 'kyozaisellist':   //2017-09-26山本 (家庭用専用)教材選択へ戻る
+                url =   "/pc/student/unit/kyozaisellist" +
+                        "" +
+                        "";
+                break;
+
+			case 'top':
+				jump2frontline(params);
+				return;
+			default:
+				jump2frontline(params);
+				return;
+		}
+		location.href=url;
+}
+</script>	<div id="contents">
+		<div id="page-title">
+                 <div id="title-ill"><img src="/pc/student/cmnimg/ill_compasses.png" alt="" width="70" height="70"></div>
+			<div class="sub-title">単元学習&nbsp;ドリル&nbsp;中学１年&nbsp;数学</div>
+			<h1> 正負の数　加法と減法 </h1>
+		</div><!-- #page-title -->
+		<div id="kyouzai-list">			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<th><ruby>教材<rt>きょうざい</ruby></th><td><ruby>基本<rt>きほん</ruby></td><td><ruby>標準<rt>ひょうじゅん</ruby></td><td><ruby>挑戦<rt>ちょうせん</rt></ruby></td><td><ruby>最終<rt>さいしゅう</ruby><ruby>学習日<rt>がくしゅうび</ruby></td>
+				</tr>
+			</table>
+			<ul>
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2281')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2281">加法</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/28</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2282')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2282">同符号の数の加法 (1)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/28</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2283')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2283">同符号の数の加法 (2)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/29</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2385')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2385">異符号の数の加法 (1)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/29</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2386')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2386">異符号の数の加法 (2)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/29</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2387')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2387">異符号の数の加法 (3)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/29</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2260')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2260">0をふくむ加法</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/29</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2397')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2397">分数をふくむ加法</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/29</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2318')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2318">小数をふくむ加法</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/29</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2286')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2286">加法の計算法則 (1)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/29</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2287')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2287">加法の計算法則 (2)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/30</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2299')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2299">減法 (1)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/30</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2300')"><img class="crown" src="/pc/student/img/crown.png" alt="" width="35" height="28"><h2 kid="2300">減法 (2)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_yellow.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/crown_red.png" alt="" width="55" height="25">100</span></div>
+				<div class="date">2020/08/30</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2301')"><h2 kid="2301">正の数の減法 (1)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/crown_blue.png" alt="" width="55" height="25">100</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span></div>
+				<div class="date">2020/08/30</div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2388')"><h2 kid="2388">正の数の減法 (2)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span></div>
+				<div class="date"></div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2389')"><h2 kid="2389">負の数の減法 (1)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span></div>
+				<div class="date"></div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2390')"><h2 kid="2390">負の数の減法 (2)</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span></div>
+				<div class="date"></div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2261')"><h2 kid="2261">0をふくむ減法</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span></div>
+				<div class="date"></div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2284')"><h2 kid="2284">加法だけの式への直し方</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span></div>
+				<div class="date"></div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('5043')"><h2 kid="5043">加法と減法が混じった計算</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span></div>
+				<div class="date"></div></a>
+			</li>
+
+			<li>
+				<a href="javascript:void(0);" onclick="input_kno('2285')"><h2 kid="2285">分数，小数の混じった計算</h2>
+				<div class="average"><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span><span class="level" qt_num="5"><img src="/pc/student/img/star_invisible.png" alt="" width="55" height="25">-</span></div>
+				<div class="date"></div></a>
+			</li>
+			</ul>
+	</div><!-- #kyouzai-list -->	</div>
+
+<!-- Form --><form name="t_res_reload" method="post" action="">
+    <input type="hidden" name="grade" value="7">
+    <input type="hidden" name="school_year" value="">
+    <input type="hidden" name="term_kbn" value="">
+    <input type="hidden" name="kamoku_no" value="12">
+    <input type="hidden" name="from_month" value="">
+    <input type="hidden" name="to_month" value="">
+    <input type="hidden" name="tno" value="2">
+    <input type="hidden" name="sno" value="">
+    <input type="hidden" name="kno" value="">
+    <input type="hidden" name="bk_pg" value="0">
+    <input type="hidden" name="sort_key" value="">
+    <input type="hidden" name="sort_kbn" value="">
+</form>
+
+<script>
+    var vflg = false;
+
+	$(function() {
+
+		$("#select-level, #modal-mask").hide();
+		$("#kyouzai-list li:even").addClass("even");
+		$("#kyouzai-list li").mouseover(function(){
+			$(this).addClass("hover");
+		}).mouseout(function(){
+			$(this).removeClass("hover");
+		});
+        /*2017-09-26山本 ドリルへは遷移させない
+		$("#kyouzai-list li").click(function() {
+            if(vflg == false){
+                vflg = true;
+            } else {
+                return false;
+            }
+
+			var _context = $(this);
+			var _kyouzaiName = $("h2", _context).html();
+			var _kyouzaiNo = $("h2", _context).attr("kid");
+			var _lvl3 = $("span:eq(0)", _context).html();
+			var _lvl6 = $("span:eq(1)", _context).html();
+			var _lvl9 = $("span:eq(2)", _context).html();
+
+                        if($("span:eq(0)", _context).attr("qt_num") == "0"){
+			     $("#select-level li:eq(0)").hide();
+                        }else{
+			     $("#select-level li:eq(0)").show();
+                        }
+                        if($("span:eq(1)", _context).attr("qt_num") == "0"){
+			     $("#select-level li:eq(1)").hide();
+                        }else{
+			     $("#select-level li:eq(1)").show();
+                        }
+                        if($("span:eq(2)", _context).attr("qt_num") == "0"){
+			     $("#select-level li:eq(2)").hide();
+                        }else{
+			     $("#select-level li:eq(2)").show();
+                        }
+
+			$("#select-level h1").html("【" + _kyouzaiName +"】");
+			$("#select-level li span:eq(0)").html(_lvl3);
+			$("#select-level li span:eq(1)").html(_lvl6);
+			$("#select-level li span:eq(2)").html(_lvl9);
+			$("#select-level a:eq(0)").attr("href", lvl3url+"/kyozai/"+_kyouzaiNo);
+			$("#select-level a:eq(1)").attr("href", lvl6url+"/kyozai/"+_kyouzaiNo);
+			$("#select-level a:eq(2)").attr("href", lvl9url+"/kyozai/"+_kyouzaiNo);
+			$("#select-level:not(:animated)").delay(400).fadeIn(700 ,function(){vflg = false;});
+			$("#modal-mask:not(:animated)").fadeTo(300, 0.9).click(function() {
+				closeModalWindow();
+			});
+		});
+        */
+
+		$(".btn-back").click(function() {
+			closeModalWindow();
+		});
+	});
+
+	function closeModalWindow() {
+		if(vflg == false){
+			$("#select-level:not(:animated)").fadeOut();
+			$("#modal-mask:not(:animated)").delay(250).fadeOut(100);
+		}
+	}
+</script>
+<div id="copyright">Copyright&copy; Lines Co.,Ltd. All Rights Reserved.</div><!-- #copyright -->
+</div><!-- #container -->
+
+<div id="modal-mask"></div>
+<section id="select-level" style="display:none">
+		<h1></h1>
+		<p>レベルを<ruby>選<rt>えら</ruby>んでください。</p>
+		<ul>
+			<li>
+				 <a href="/pc/student/drill/drill/course/1/level/3/status/1"><h2><ruby>基本<rt>きほん</ruby><span class="average"></span></h2></a>
+			</li>
+			<li>
+				 <a href="/pc/student/drill/drill/course/1/level/6/status/1"><h2><ruby>標準<rt>ひょうじゅん</ruby><span class="average"></span></h2></a>
+			</li>
+			<li>
+				 <a href="/pc/student/drill/drill/course/1/level/9/status/1"><h2><ruby>挑戦<rt>ちょうせん</rt></ruby><span class="average"></span></h2></a>
+			</li>
+			<li class="btn-back"><a href="javascript:void(0);"><h2>もどる</h2></a></li>
+		</ul>	
+<script>
+	var lvl3url = "/pc/student/drill/drill/course/1/level/3/status/1";
+	var lvl6url = "/pc/student/drill/drill/course/1/level/6/status/1";
+	var lvl9url = "/pc/student/drill/drill/course/1/level/9/status/1";
+</script>
+</section><!-- #select-level -->
+
+<!--Debug-->
+</body>
+</html>

@@ -1,0 +1,606 @@
+type "End" to end
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > read end
+directory   Google Drive/
+directory      Documents-G/
+directory        Joe/
+directory          Lemon tree/
+file                 text.txt
+file                 test2.txt
+file                 convert.py
+directory          other/
+file                 p.xlsx
+directory          programming/
+directory            C++/
+directory              Test/
+file                     main.cpp
+file                     main
+file                     .DS_Store
+file                   .DS_Store
+directory            CSS/
+directory              my blog/
+file                     Thanatos2.jpg
+file                     Thanatos.svg
+file                     sub.css
+file                     main.html
+file                     drow2.jpg
+file                     draw white.svg
+file                     .DS_Store
+directory              prac1/
+file                     main.html
+file                     main.css
+file                     .DS_Store
+directory              prac2/
+file                     stylesheet.css
+file                     main.html
+file                     .DS_Store
+directory              progate CSS　練習/
+file                     stylesheet.css
+file                     main.html
+file                   .DS_Store
+directory            HTML/
+directory              other/
+directory                img/
+file                       main.html
+directory                list/
+file                       main.html
+file                       .DS_Store
+directory                prac1/
+file                       main.html
+file                       .DS_Store
+directory                Text D/
+file                       main.html
+file                     .DS_Store
+file                   tag.txt
+file                   .DS_Store
+directory            Java/
+directory              array/
+file                     main.java
+file                     MAIN.class
+directory              calculator/
+file                     main.java
+file                     calculator.class
+directory              class/
+file                     main.java
+file                     MAIN.class
+directory              Hello World!!/
+file                     main.java
+file                     MAIN.class
+directory              println/
+file                     Temp.class
+file                     main.java
+file                     MAIN.class
+directory              Test/
+file                     Test.java
+file                     MAIN.class
+directory            JavaScript/
+directory              book-js/
+directory                completed/
+directory                  2-01_console/
+directory                    step1/
+file                           index.html
+directory                  2-02_tag/
+file                           index.html
+directory                    step2/
+file                           script.js
+file                           index.html
+directory                  2-03_alert/
+directory                    step1/
+file                           index.html
+directory                  2-04_html/
+directory                    extra/
+file                           index.html
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  3-01_if/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  3-02_var/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  3-03_elseif/
+directory                    step1/
+file                           index.html
+directory                  3-04_comparison/
+file                           index.html
+directory                  3-05_logical/
+file                           index.html
+directory                  3-06_for/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  3-07_while/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  3-08_function/
+directory                    extra/
+file                           index.html
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  3-09_fizzbuzz/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  3-10_array/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                    step3/
+file                           index.html
+directory                    step4/
+file                           index.html
+directory                  3-11_object/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                    step3/
+file                           index.html
+directory                  4-01_input/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  4-02_12hour/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  4-03_digit/
+directory                    step1/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                  4-04_math/
+directory                    step1/
+file                           index.html
+directory                  5-01_countdown/
+file                           index.html
+directory                    step2/
+file                           index.html
+directory                    step3/
+file                           index.html
+directory                  5-02_location/
+directory                    step1/
+file                           script.js
+file                           index.html
+file                           index-zh.html
+file                           index-en.html
+directory                    step2/
+file                           script.js
+file                           index.html
+file                           index-zh.html
+file                           index-en.html
+directory                  5-03_cookie/
+directory                    step1/
+file                           thankyou.html
+file                           index.html
+directory                  5-04_image/
+file                           thumb-img3.jpg
+file                           thumb-img2.jpg
+file                           thumb-img1.jpg
+file                           index.html
+file                           img3.jpg
+file                           img2.jpg
+file                           img1.jpg
+directory                    step2/
+file                           thumb-img3.jpg
+file                           thumb-img2.jpg
+file                           thumb-img1.jpg
+file                           index.html
+file                           img3.jpg
+file                           img2.jpg
+file                           img1.jpg
+directory                  5-05_slide/
+directory                    extra/
+directory                      images/
+file                             prev.png
+file                             next.png
+file                             image5.jpg
+file                             image4.jpg
+file                             image3.jpg
+file                             image2.jpg
+file                             image1.jpg
+file                           index.html
+directory                    step1/
+directory                      images/
+file                             prev.png
+file                             next.png
+file                             image5.jpg
+file                             image4.jpg
+file                             image3.jpg
+file                             image2.jpg
+file                             image1.jpg
+file                           index.html
+directory                    step2/
+directory                      images/
+file                             prev.png
+file                             next.png
+file                             image5.jpg
+file                             image4.jpg
+file                             image3.jpg
+file                             image2.jpg
+file                             image1.jpg
+file                           index.html
+directory                  6-01_menu/
+directory                    step1/
+file                           index.html
+directory                  6-02_box/
+directory                    extra/
+file                           index.html
+directory                    step1/
+file                           index.html
+directory                  6-03_ajax/
+file                           index.html
+file                           data.json
+directory                  7-01_rss/
+directory                    extra/
+file                           samplefeed.xml
+file                           index.html
+directory                    step1/
+file                           index.html
+file                           cdxml.php
+directory                    step2/
+file                           index.html
+file                           cdxml.php
+directory                    step3/
+file                           index.html
+file                           cdxml.php
+file                         basicfeed.xml
+directory                  7-02_photo/
+directory                    extra/
+file                           script.js
+file                           loading.gif
+file                           index.html
+directory                    step2/
+file                           script.js
+file                           loading.gif
+file                           index.html
+directory                    step3/
+file                           script.js
+file                           loading.gif
+file                           index.html
+directory                    step4/
+file                           script.js
+file                           loading.gif
+file                           index.html
+directory                  _common/
+directory                    css/
+file                           style.css
+directory                    images/
+file                           header-logo.png
+file                           header-bg.png
+file                           body-bg.png
+directory                    scripts/
+directory                      js-cookie/
+directory                        src/
+file                               js.cookie.js
+file                               .jshintrc
+directory                        test/
+file                               utils.js
+file                               tests.js
+file                               polyfill.js
+file                               malformed_cookie.html
+file                               index.html
+file                               encoding.js
+file                               encoding.html
+file                               commonjs.js
+file                               amd.js
+file                               amd.html
+file                               amd-config.js
+file                               .jshintrc
+file                             travis.sh
+file                             README.md
+file                             package.json
+file                             MIT-LICENSE.txt
+file                             Gruntfile.js
+file                             CONTRIBUTING.md
+file                             bower.json
+file                             .travis.yml
+file                             .tm_properties
+file                             .project
+file                             .npmignore
+file                             .jshintrc
+file                             .jshintignore
+file                           js.cookie.js
+directory                practice/
+directory                  3-1/
+file                         index.html
+directory                  _template/
+file                         index.html
+directory              now_date_time/
+file                     style.css
+file                     script.js
+file                     index.html
+file                     desktop.ini
+directory            Python/
+directory              class/
+directory                greeter/
+file                       Robot1.txt
+file                       Robot.pyc
+file                       Robot.py
+file                       .DS_Store
+file                     .DS_Store
+directory              csvmodule/
+file                     test.csv
+file                     main.py
+directory              Module/
+directory                file/
+directory                  read/
+file                         __init__.pyc
+file                         __init__.py
+file                         txt.pyc
+file                         txt.py
+file                         test.txt
+file                         test.csv
+file                         Csv.pyc
+file                         Csv.py
+file                         .DS_Store
+directory                  write/
+file                         test.csv
+file                         Csv.pyc
+file                         Csv.py
+file                         .DS_Store
+file                       __init__.pyc
+file                       __init__.py
+file                       .DS_Store
+directory                my_function/
+file                       __init__.py
+file                       math.py
+file                       .DS_Store
+file                     .DS_Store
+directory              other/
+directory                99/
+file                       九九.txt
+file                       main.py
+directory                Fact/
+file                       main.py
+file                       .DS_Store
+directory                for practice/
+directory                  7/
+directory                    Final form/
+file                           main.py
+file                         .DS_Store
+directory                  8/
+directory                    1/
+file                           main.py
+file                           .DS_Store
+directory                    show/
+file                           main3.py
+file                           main2.py
+file                           main1.py
+file                         .DS_Store
+directory                  Test/
+file                         main.py
+file                       .DS_Store
+directory                graph/
+directory                  matplotlib/
+directory                    Linear function/
+file                           main.py
+file                           data1.png
+file                           .DS_Store
+file                         .DS_Store
+file                       .DS_Store
+directory                mountain/
+file                       test2.py
+file                       .DS_Store
+directory                number game/
+file                       main.py
+file                       .DS_Store
+directory                practice/
+directory                  Pythonで始める/
+directory                    2/
+directory                      2-1/
+file                             shell
+file                             .DS_Store
+directory                      2-2/
+file                             text.rtf
+file                             .DS_Store
+file                           .DS_Store
+directory                    3/
+directory                      3-1/
+file                             main.py
+directory                      3-2/
+file                             main.py
+directory                      3-3/
+file                             oseji.py
+file                             .DS_Store
+directory                      3-4/
+file                             text.rtf
+file                             .DS_Store
+directory                      3-5/
+file                             text.txt
+file                             .DS_Store
+directory                      3-6/
+file                             text.txt
+file                           .DS_Store
+directory                    4/
+directory                      4-1/
+file                             comparisons.py
+file                           .DS_Store
+file                         .DS_Store
+file                       .DS_Store
+directory                Prime number/
+directory                  YesNo/
+file                         main.py
+file                         .DS_Store
+file                       .DS_Store
+directory                rock scissor paper/
+file                       rock scissor paper.py
+directory                screenshots/
+file                       屏幕快照 2020-07-01 下午11.13.08.png
+file                       屏幕快照 2020-06-30 下午9.23.55.png
+file                       屏幕快照 2020-06-30 下午9.22.58.png
+file                       屏幕快照 2020-06-29 下午9.16.26.png
+file                       屏幕快照 2020-06-29 下午8.50.42.png
+file                       屏幕快照 2020-06-29 下午10.01.48.png
+file                       .DS_Store
+directory                use FM/
+directory                  Test1_txt/
+file                         test.txt
+file                         main.py
+file                         abc.txt
+file                         abc.csv
+file                         .DS_Store
+directory                  Test2_csv/
+file                         test2.csv
+file                         test.csv
+file                         main.py
+file                       .DS_Store
+directory                y_n/
+file                       main.py
+file                       .DS_Store
+directory                二次方程式/
+file                       main.py
+file                       main.html
+directory                棱形/
+file                       prog.py
+file                       .DS_Store
+file                     .DS_Store
+directory              print/
+file                     main.py
+file                   .DS_Store
+directory            Ruby/
+directory              Hello/
+file                     Hello.rb
+file                 .DS_Store
+file               empty.html
+file               bookmarks_2020_08_15.html
+file               .DS_Store
+file             my_VBA_sourses.xlsm
+file             htdocs.gshortcut
+directory      Music-G/
+directory        Alan walker/
+file               alan_walker_the_spectre_wJnBTPUQS5A.mp3
+file               alan_walker_fade_ncs_release_bM7SZ5SBzyY.mp3
+file               alan_walker_faded_60ItHLz5WEA.mp3
+file               Alan x Walkers - Unity.mp3
+file               Alan Walker, Sabrina Carpenter Farruko - On My Way.mp3
+file               Alan Walker vs Coldplay - Hymn For The Weekend [Remix].mp3
+file               Alan Walker ft. Gavin James - Tired.mp3
+file               Alan Walker - Sing Me To Sleep.mp3
+file               Alan Walker - Force.mp3
+file               Alan Walker - Different World feat. Sofia Carson, K-391 & CORSAK (Lyric Video).mp3
+file               Alan Walker - Darkside (feat. AuRa and Tomine Harket).mp3
+file               Alan Walker - Alone.mp3
+file               Alan Walker - All Falls Down (feat. Noah Cyrus with Digital Farm Animals) (1).mp3
+file               Alan Walker Ruben Heading Home (Official Music Video).mp3
+file               Alan Walker Ava Max - Alone, Pt. II (Live at Château de Fontainebleau).mp3
+directory        minecraft/
+file               Wet Hands.mp3
+file               Subwoofer Lullaby.mp3
+file               Moog City.mp3
+file               Mice On Venus.mp3
+file               Haggstrom.mp3
+file               c418_sweden_minecraft.mp3
+file               c418_minecraft_minecraft_volume_alpha_qq-RGFyaq0U.mp3
+file               c418_aria_math_minecraft.mp3
+file               C418 - Mice on Venus - Minecraft Volume Alpha.mp3
+file               C418 - Living Mice - Minecraft Volume Alpha.mp3
+file               C418 - Danny - Minecraft Volume Alpha.mp3
+file               Beginning.mp3
+file               Beginning 2.mp3
+directory        その他/
+file               校歌.mp3
+file               夢の翼.mp3
+file               命に嫌われている.mp3
+file               動畫YouTube上最糟糕的吃雞小隊_ エフピーエス神 x 路 x 白 x 羽動畫作者魚二.mp3
+file               【MV】ノンタイトル／まふまふ_oh5swa7mI30.mp3
+file               【MV】すーぱーぬこになれんかった／まふまふ【セルフカバー】_KRSzKCFsTVA.mp3
+file               Take Back the Night - A Minecraft Original Music Video.mp3
+file               Shirk haunted.mp3
+file               Revenge - A Minecraft Parody of Ushers DJ Got Us Fallin in Love - Crafted Using Noteblocks.mp3
+file               Lemon Tree - Fools Garden.mp3
+file               k_391_summertime_9c2rW2Jd2DM.mp3
+file               Kygo - Stranger Things ft. OneRepublic (Alan Walker Remix).mp3
+file               K-391 - Ignite (feat. Alan Walker, Julie Bergan Seungri).mp3
+file               Ina Wroldsen - Strongest (Alan Walker Remix).mp3
+file               Gourmet Race(8bit remix).mp3
+file               Fallen Kingdom - A Minecraft Parody of Coldplays Viva la Vida (Music Video).mp3
+directory        サウンド レコーディング/
+file               校歌.mp3
+file               校歌.m4a
+file               レコーディング (2).m4a
+directory        学校/
+file               校歌.mp3
+file               夢の翼.mp3
+file               ラジオ体操第一.mp3
+file               filelst.lst
+directory        阿神/
+file               阿神旧常用BGMJazz in ParisNon Copyright Music).mp3
+file               阿神常用BGMOMFG - Dying.mp3
+file               阿神常用bgmLuigis Mansion (Qumu Remix).mp3
+file               阿神常用BGMGreen Greens- Kirby Dreamland( Kirbys Epic Yarn Soundtrack).mp3
+file               阿神常用BGM- OMFG- Pizza.mp3
+file               動畫Blast Off 末日倖存者 完結紀念動畫作者鱷魚 Bob.mp3
+file               [阿神最新BGM]-Brain Trust (Non Copyright Music).mp3
+file               [阿神新片尾背景音樂]Shirk haunted.mp3
+file               [阿神常用BGM]-Gourmet Race(8bit remix).mp3
+file               party troll song by D1ofAquavibe.mp3
+file               OMFG - Hello.mp3
+file               Brain Trust (Non Copyright Music).mp3
+file               BGMUndertale- Megalovania.mp3
+file               BGMSuper Mario World Theme Song (GFM Trap Remix).mp3
+file               BGMOMFG- Ice Cream.mp3
+file               BGMOMFG - Dying.mp3
+file               bgmLuigis Mansion (Qumu Remix).mp3
+file               bgmKevin MacLeod- Run Amok(.mp3
+file               BGMJazz in ParisNon Copyright Music).mp3
+file               BGMGreen Greens- Kirby Dreamland( Kirbys Epic Yarn Soundtrack).mp3
+file               BGMAmaz.ooo Ads Music(Happy Mandolin).mp3
+file               bgmAbove and Beyond.mp3
+file               BGM-Flower Garden - Yoshis World.mp3
+file               BGM- OMFG- Pizza.mp3
+directory      Picture-G/
+file             死神.jpg
+file             スクリーンショット 0032-08-12 23.36.59.png
+file             コメント 2020-08-29 221711.png
+file             Thanatos3.svg
+file             Thanatos3.jpg
+file             Thanatos2.jpg
+file             Thanatos1.jpg
+file             Thanatos.svg
+file             Thanatos.jpg
+file             Screenshot 2020-10-09 221013.png
+file             Screenshot 2020-10-08 222205.png
+file             Screenshot 2020-10-08 222205.gdoc
+file             Screenshot 2020-09-27 160151.png
+file             Pythonエラー.png
+file             main.java.png
+file             Jukebox.png
+file             graff.png
+file             EhuPP-jU0AE8cL8.jpeg
+file             drow2.svg
+file             drow2.jpg
+file             drow2 (1).jpg
+file             draw icon.svg
+file             draw icon.jpg のコピー
+file             draw icon.jpg
+file             draw icon (1).jpg
+file             draw black.svg
+file             draw black.jpg
+file             costume1.svg
+file             costume1.jpg
+file             2.svg
+file             2.png
+file             1.svg
+file             1.jpg
+file             1 (1).jpg
+directory      Video-G/
+file             Lemon Tree - Fools Garden.mp4
+file           無題のドキュメント.gdoc
+file           desktop.ini
+file           com.apple.AirPortBaseStationAgent.plist
+directory      /
+file           end

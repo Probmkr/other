@@ -6,7 +6,9 @@ def layer(max, i = 1):
         print('*' * i)
     return i - 1
 
-max = int(input('>> '))
-print('\n\n')
+if __name__=='__main__':
 
-layer(max)
+    max = int(input('>> '))
+    print('\n\n')
+
+    layer(max)

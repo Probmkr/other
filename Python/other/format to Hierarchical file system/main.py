@@ -1,7 +1,6 @@
 # coding: utf-8
 # Your code here!
 from os import path
-import pyocr.builders
 
 lines = []
 

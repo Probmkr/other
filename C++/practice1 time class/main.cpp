@@ -63,7 +63,7 @@ void daytime::add_hours(int hour)
     if (hours <= 24)
     {
         days += hours / 24;
-        hours = hours % 24
+        hours = hours % 24;
     }
 }
 

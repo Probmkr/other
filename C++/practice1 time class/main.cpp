@@ -23,7 +23,7 @@ class daytime
 public:
     daytime(int, int, int, int, int);
     daytime();
-    void get_day_time(int[])    const;
+    void get_day_time(int[]) const;
     void add_day(int);
     void add_hours(int);
     void add_time(int, int, int, int, int);
@@ -36,23 +36,24 @@ int menu();
 daytime::daytime(int day, int hour = 0, int min = 0,
                  int sec = 0, int milli = 0)
 {
-    days         = day;
-    hours        = hour;
-    minutes      = min;
-    seconds      = sec;
-    milliseconds = milli;
+    this->days         = day;
+    this->hours        = hour;
+    this->minutes      = min;
+    this->seconds      = sec;
+    this->milliseconds = milli;
 }
 
 daytime::daytime()
 {
-    days = 0; hours = 0; minutes = 0;
-    seconds = 0; milliseconds = 0;
+    this->days = 0; this->hours = 0; this->minutes = 0;
+    this->seconds = 0; this->milliseconds = 0;
 }
 
 void daytime::get_day_time(int receiver[]) const
 {
     int *daytime = receiver;
-    int array[5] = {days, hours, minutes, seconds, milliseconds};
+    int array[5] = {this->days, this->hours, this->minutes,
+                    this->seconds, this->milliseconds};
     for (int i = 0; i < 5; i++)
     {
         *daytime = array[i];
@@ -62,16 +63,16 @@ void daytime::get_day_time(int receiver[]) const
 
 void daytime::add_day(int day)
 {
-    days += day;
+    this->days += day;
 }
 
 void daytime::add_hours(int hour)
 {
-    hours += hour;
-    if (hours <= 24)
+    this->hours += hour;
+    if (this->hours <= 24)
     {
-        days += hours / 24;
-        hours = hours % 24;
+        this->days += this->hours / 24;
+        this->hours = this->hours % 24;
     }
 }
 
@@ -105,5 +106,11 @@ int main()
 {
     daytime time;
     init(&time);
+    int arr[5];
+    time.get_day_time(arr);
+    for (int i = 0; i < 5; i++)
+    {
+        cout << arr[i] << " ";
+    }
     return 0;
 }

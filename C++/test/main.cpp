@@ -4,5 +4,12 @@
 using namespace std;
 
 int main(){
-    cout << 0b0100 << endl;
+    int i = -1;
+    cout << "enter number > ";
+    cin >> i;
+    cout << i << endl;
+    cin.clear();
+    cin.ignore();
+    cin >> i;
+    cout << i << endl;
 }

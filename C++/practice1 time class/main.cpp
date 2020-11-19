@@ -25,7 +25,10 @@ public:
     daytime();
     void get_day_time(int[]) const;
     void add_day(int);
-    void add_hours(int);
+    void add_hour(int);
+    void add_min(int);
+    void add_sec(int);
+    void add_milli(int);
     void add_time(int, int, int, int, int);
 };
 
@@ -66,20 +69,54 @@ void daytime::add_day(int day)
     this->days += day;
 }
 
-void daytime::add_hours(int hour)
+void daytime::add_hour(int hour)
 {
     this->hours += hour;
     if (this->hours <= 24)
     {
         this->days += this->hours / 24;
-        this->hours = this->hours % 24;
+        this->hours %= 24;
+    }
+}
+
+void daytime::add_min(int min)
+{
+    this->minutes += min;
+    if (this->minutes >= 60)
+    {
+        this->hours += this->minutes / 60;
+        this->minutes %= 60;
+    }
+}
+
+void daytime::add_sec(int sec)
+{
+    this->seconds += sec;
+    if (this->seconds >= 60)
+    {
+        this->minutes += this->seconds / 60;
+        this->seconds %= 60;
+    }
+}
+
+void daytime::add_milli(int milli)
+{
+    this->milliseconds += milli;
+    if (this->milliseconds >= 1000)
+    {
+        this->seconds += this->milliseconds / 1000;
+        this->milliseconds %= 1000;
     }
 }
 
 void daytime::add_time(int day, int hour = 0,int min = 0,
                        int sec = 0,int milli = 0)
 {
-    
+    this->add_day(day);
+    this->add_hour(hour);
+    this->add_min(min);
+    this->add_sec(sec);
+    this->add_milli(milli);
 }
 
 void init(daytime *to)

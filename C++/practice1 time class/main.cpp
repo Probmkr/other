@@ -11,6 +11,7 @@ const int HOUR  = 0b000100;
 const int MIN   = 0b001000;
 const int SEC   = 0b010000;
 const int MILLI = 0b100000;
+const int ALL   = 0b111110;
 
 class daytime
 {
@@ -35,6 +36,10 @@ public:
 void init(daytime *);
 
 int menu();
+
+int menu_selected_0();
+
+int menu_selected_1();
 
 daytime::daytime(int day, int hour = 0, int min = 0,
                  int sec = 0, int milli = 0)
@@ -136,7 +141,67 @@ void init(daytime *to)
 
 int menu()
 {
-    cout << "two choice [1]get or [2]add";
+    int ans = 0;
+    int bin = 0;
+    while (ans < 0 && ans > 1)
+    {
+        cout << "two choice [0]get or [1]add > ";
+        cin >> ans;
+        cin.clear();
+        cin.ignore();
+    }
+    switch (ans)
+    {
+    case GET:
+        menu_selected_0();
+        break;
+
+    case ADD:
+        menu_selected_1();
+        break;
+
+    default:
+        break;
+    }
+}
+
+int menu_selected_0()
+{
+    int ans = 0;
+    cout << "what type of time do you want ?\n\
+[0]DAY  [1]HOUR [2]MINUTES [3]SECOND [4]MILLISECOND\n\
+ > ";
+    cin >> ans;
+    int bin = 0;
+    switch (ans)
+    {
+    case 0:
+        bin += DAY;
+        break;
+
+    case 1:
+        bin += HOUR;
+        break;
+
+    case 2:
+        bin += MIN;
+        break;
+
+    case 3:
+        bin += SEC;
+        break;
+
+    case 4:
+        bin += MILLI;
+        break;
+
+    case 5:
+        bin += ALL;
+
+    default:
+        break;
+    }
+    return bin;
 }
 
 int main()

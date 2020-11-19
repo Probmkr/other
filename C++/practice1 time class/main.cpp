@@ -12,10 +12,6 @@ const int MIN   = 0b001000;
 const int SEC   = 0b010000;
 const int MILLI = 0b100000;
 
-void init();
-
-int menu();
-
 class daytime
 {
     int days;
@@ -27,19 +23,23 @@ class daytime
 public:
     daytime(int, int, int, int, int);
     daytime();
-    void get_day_time(int[]);
+    void get_day_time(int[])    const;
     void add_day(int);
     void add_hours(int);
     void add_time(int, int, int, int, int);
 };
 
+void init(daytime *);
+
+int menu();
+
 daytime::daytime(int day, int hour = 0, int min = 0,
                  int sec = 0, int milli = 0)
 {
-    days = day;
-    hours = hour;
-    minutes = min;
-    seconds = sec;
+    days         = day;
+    hours        = hour;
+    minutes      = min;
+    seconds      = sec;
     milliseconds = milli;
 }
 
@@ -49,7 +49,7 @@ daytime::daytime()
     seconds = 0; milliseconds = 0;
 }
 
-void daytime::get_day_time(int receiver[])
+void daytime::get_day_time(int receiver[]) const
 {
     int *daytime = receiver;
     int array[5] = {days, hours, minutes, seconds, milliseconds};
@@ -81,7 +81,7 @@ void daytime::add_time(int day, int hour = 0,int min = 0,
     
 }
 
-void init(daytime &to)
+void init(daytime *to)
 {
     string word_arr[5] = {"day", "hour", "minute", "second", "millisecond"};
     int time_arr[5];
@@ -93,6 +93,7 @@ void init(daytime &to)
         cin.ignore();
     }
     daytime from(time_arr[0], time_arr[1], time_arr[2], time_arr[3], time_arr[4]);
+    *to = from;
 }
 
 int menu()
@@ -102,6 +103,7 @@ int menu()
 
 int main()
 {
-    daytime time();
+    daytime time;
+    init(&time);
     return 0;
 }

@@ -25,6 +25,7 @@ public:
     daytime(int, int, int, int, int);
     daytime();
     void get_day_time(int[]) const;
+    void get_str() const; // 続きはここから
     void add_day(int);
     void add_hour(int);
     void add_min(int);
@@ -124,7 +125,7 @@ void daytime::add_time(int day, int hour = 0,int min = 0,
     this->add_milli(milli);
 }
 
-void init(daytime *to)
+void init(daytime *to) // for intiate
 {
     string word_arr[5] = {"day", "hour", "minute", "second", "millisecond"};
     int time_arr[5];

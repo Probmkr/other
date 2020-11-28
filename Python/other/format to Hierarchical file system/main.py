@@ -35,5 +35,4 @@ for i in lines:
     # print('file      ', ' '*(indent-1), f'{pathN:70}', f'{pathD:30}', prev) # for test
     print('file      ', ' '*(indent-1), i[-1])
     prev = i[:-1]
-    
-    
+

@@ -1,6 +1,7 @@
 // don't use alt + shift + f
 #include <string>
 #include <iostream>
+#include <cstdio>
 
 using namespace std;
 
@@ -25,7 +26,7 @@ public:
     daytime(int, int, int, int, int);
     daytime();
     void get_day_time(int[]) const;
-    void get_str() const; // 続きはここから
+    string get_str() const; // 続きはここから
     void add_day(int);
     void add_hour(int);
     void add_min(int);
@@ -68,6 +69,11 @@ void daytime::get_day_time(int receiver[]) const
         *daytime = array[i];
         daytime++;
     }
+}
+
+string daytime::get_str() const
+{
+    return to_string(this->days) + ':' + to_string(this->hours) + ':' + to_string(this->minutes) + ':' + to_string(this->seconds) + ':' + to_string(this->milliseconds);
 }
 
 void daytime::add_day(int day)
@@ -215,5 +221,6 @@ int main()
     {
         cout << arr[i] << " ";
     }
+    cout << endl << time.get_str();
     return 0;
 }

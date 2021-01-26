@@ -1,0 +1,623 @@
+read end
+d  :  Google Drive/
+d  :     Documents-G/
+d  :       Lemon tree/
+f  :         text.txt
+f  :         test2.txt
+f  :         convert.py
+d  :       other/
+f  :         Untitled.rtf
+f  :         Untitled copy.rtf
+f  :         p.xlsx
+f  :         Minecraft.dmg
+d  :       programming/
+d  :         C++/
+d  :           Test/
+f  :             main.cpp
+f  :             main
+f  :             .DS_Store
+f  :           .DS_Store
+d  :         CSS/
+d  :           my blog/
+f  :             Thanatos2.jpg
+f  :             Thanatos.svg
+f  :             sub.css
+f  :             main.html
+f  :             drow2.jpg
+f  :             draw white.svg
+f  :             .DS_Store
+d  :           prac1/
+f  :             main.html
+f  :             .DS_Store
+d  :           prac2/
+f  :             stylesheet.css
+f  :             main.html
+f  :             .DS_Store
+d  :           progate CSS　練習/
+f  :             stylesheet.css
+f  :             main.html
+f  :           .DS_Store
+d  :         HTML/
+d  :           other/
+d  :             img/
+f  :               main.html
+d  :             list/
+f  :               main.html
+f  :               .DS_Store
+d  :             prac1/
+f  :               main.html
+f  :               .DS_Store
+d  :             Text D/
+f  :               main.html
+f  :             .DS_Store
+f  :           tag.txt
+f  :           .DS_Store
+d  :         Java/
+d  :           array/
+f  :             main.java
+f  :             MAIN.class
+d  :           calculator/
+f  :             main 16.55.19.java
+f  :             main 16.55.19 copy.java
+f  :             calculator.class
+d  :           class/
+f  :             main.java
+f  :             MAIN.class
+d  :           Hello World!!/
+f  :             MAIN.class
+f  :             main 16.55.19 16.55.19.java
+f  :             main 16.55.19 16.55.19 copy.java
+d  :           println/
+f  :             Temp.class
+f  :             MAIN.class
+d  :           Test/
+f  :             Test.java
+f  :             MAIN.class
+d  :         JavaScript/
+d  :           book-js/
+d  :             completed/
+d  :               2-01_console/
+d  :                 step1/
+f  :                   index 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19.html
+f  :                   index 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 copy.html
+d  :               2-02_tag/
+f  :                   index 16.55.19 16.55.19 16.55.19 16.55.19.html
+f  :                   index 16.55.19 16.55.19 16.55.19 16.55.19 copy.html
+d  :                 step2/
+f  :                   script.js
+f  :                   index 16.55.19 16.55.19 16.55.19.html
+f  :                   index 16.55.19 16.55.19 16.55.19 copy.html
+d  :               2-03_alert/
+d  :                 step1/
+f  :                   index 16.55.19 16.55.19.html
+f  :                   index 16.55.19 16.55.19 copy.html
+d  :               2-04_html/
+d  :                 extra/
+f  :                   index.html
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               3-01_if/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               3-02_var/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               3-03_elseif/
+d  :                 step1/
+f  :                   index.html
+d  :               3-04_comparison/
+f  :                   index.html
+d  :               3-05_logical/
+f  :                   index.html
+d  :               3-06_for/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               3-07_while/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               3-08_function/
+d  :                 extra/
+f  :                   index.html
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               3-09_fizzbuzz/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               3-10_array/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :                 step3/
+f  :                   index.html
+d  :                 step4/
+f  :                   index.html
+d  :               3-11_object/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :                 step3/
+f  :                   index.html
+d  :               4-01_input/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               4-02_12hour/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               4-03_digit/
+d  :                 step1/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :               4-04_math/
+d  :                 step1/
+f  :                   index.html
+d  :               5-01_countdown/
+f  :                   index.html
+d  :                 step2/
+f  :                   index.html
+d  :                 step3/
+f  :                   index.html
+d  :               5-02_location/
+d  :                 step1/
+f  :                   script.js
+f  :                   index.html
+f  :                   index-zh.html
+f  :                   index-en.html
+d  :                 step2/
+f  :                   script.js
+f  :                   index.html
+f  :                   index-zh.html
+f  :                   index-en.html
+d  :               5-03_cookie/
+d  :                 step1/
+f  :                   thankyou.html
+d  :               5-04_image/
+f  :                   thumb-img3.jpg
+f  :                   thumb-img2.jpg
+f  :                   thumb-img1.jpg
+f  :                   index.html
+f  :                   img3.jpg
+f  :                   img2.jpg
+f  :                   img1.jpg
+d  :                 step2/
+f  :                   thumb-img3.jpg
+f  :                   thumb-img2.jpg
+f  :                   thumb-img1.jpg
+f  :                   index.html
+f  :                   img3.jpg
+f  :                   img2.jpg
+f  :                   img1.jpg
+d  :               5-05_slide/
+d  :                 extra/
+d  :                   images/
+f  :                     prev.png
+f  :                     next.png
+f  :                     image5.jpg
+f  :                     image4.jpg
+f  :                     image3.jpg
+f  :                     image2.jpg
+f  :                     image1.jpg
+f  :                   index.html
+d  :                 step1/
+d  :                   images/
+f  :                     prev.png
+f  :                     next.png
+f  :                     image5.jpg
+f  :                     image4.jpg
+f  :                     image3.jpg
+f  :                     image2.jpg
+f  :                     image1.jpg
+f  :                   index.html
+d  :                 step2/
+d  :                   images/
+f  :                     prev.png
+f  :                     next.png
+f  :                     image5.jpg
+f  :                     image4.jpg
+f  :                     image3.jpg
+f  :                     image2.jpg
+f  :                     image1.jpg
+f  :                   index.html
+d  :               6-01_menu/
+d  :                 step1/
+f  :                   index.html
+d  :               6-02_box/
+d  :                 extra/
+f  :                   index.html
+d  :                 step1/
+f  :                   index.html
+d  :               6-03_ajax/
+f  :                   index.html
+f  :                   data.json
+d  :               7-01_rss/
+d  :                 extra/
+f  :                   samplefeed.xml
+f  :                   index.html
+d  :                 step1/
+f  :                   index.html
+f  :                   cdxml.php
+d  :                 step2/
+f  :                   index.html
+f  :                   cdxml.php
+d  :                 step3/
+f  :                   index.html
+f  :                   cdxml.php
+f  :                 basicfeed.xml
+d  :               7-02_photo/
+d  :                 extra/
+f  :                   script.js
+f  :                   loading.gif
+f  :                   index 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19.html
+f  :                   index 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 copy.html
+d  :                 step2/
+f  :                   script.js
+f  :                   loading.gif
+f  :                   index.html
+d  :                 step3/
+f  :                   script.js
+f  :                   loading.gif
+f  :                   index.html
+d  :                 step4/
+f  :                   script.js
+f  :                   loading.gif
+f  :                   index.html
+d  :               _common/
+d  :                 css/
+f  :                   style.css
+d  :                 images/
+f  :                   header-logo.png
+f  :                   header-bg.png
+f  :                   body-bg.png
+d  :                 scripts/
+d  :                   js-cookie/
+d  :                     src/
+f  :                       js.cookie.js
+f  :                       .jshintrc
+d  :                     test/
+f  :                       utils.js
+f  :                       tests.js
+f  :                       polyfill.js
+f  :                       malformed_cookie.html
+f  :                       index.html
+f  :                       encoding.js
+f  :                       encoding.html
+f  :                       commonjs.js
+f  :                       amd.js
+f  :                       amd.html
+f  :                       amd-config.js
+f  :                       .jshintrc
+f  :                     travis.sh
+f  :                     README.md
+f  :                     package.json
+f  :                     MIT-LICENSE.txt
+f  :                     Gruntfile.js
+f  :                     CONTRIBUTING.md
+f  :                     bower.json
+f  :                     .travis.yml
+f  :                     .tm_properties
+f  :                     .project
+f  :                     .npmignore
+f  :                     .jshintrc
+f  :                     .jshintignore
+f  :                   js.cookie.js
+d  :             practice/
+d  :               3-1/
+f  :                 index.html
+d  :               _template/
+f  :                 index 16.55.19.html
+f  :                 index 16.55.19 copy.html
+d  :           now_date_time/
+f  :             style.css
+f  :             style copy.css
+f  :             script.js
+f  :             script copy.js
+f  :             index.html
+f  :             index 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19.html
+f  :             index 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 16.55.19 copy.html
+f  :             desktop.ini
+d  :         Python/
+d  :           class/
+d  :             greeter/
+f  :               Robot1.txt
+f  :               Robot.pyc
+f  :               Robot.py
+f  :               .DS_Store
+f  :             .DS_Store
+d  :           csvmodule/
+f  :             test.csv
+f  :             main.py
+d  :           Module/
+d  :             file/
+d  :               read/
+f  :                 __init__.pyc
+f  :                 __init__.py
+f  :                 txt.pyc
+f  :                 txt.py
+f  :                 test.txt
+f  :                 test.csv
+f  :                 Csv.pyc
+f  :                 Csv.py
+f  :                 .DS_Store
+d  :               write/
+f  :                 test.csv
+f  :                 Csv.pyc
+f  :                 Csv.py
+f  :                 .DS_Store
+f  :               __init__.pyc
+f  :               __init__.py
+f  :               .DS_Store
+d  :             my_function/
+f  :               __init__.py
+f  :               math.py
+f  :               .DS_Store
+f  :             .DS_Store
+d  :           other/
+d  :             99/
+f  :               九九.txt
+f  :               main.py
+d  :             Fact/
+f  :               main.py
+f  :               .DS_Store
+d  :             for practice/
+d  :               7/
+d  :                 Final form/
+f  :                   main.py
+f  :                 .DS_Store
+d  :               8/
+d  :                 1/
+f  :                   main.py
+f  :                   .DS_Store
+d  :                 show/
+f  :                   main3.py
+f  :                   main2.py
+f  :                   main1.py
+f  :                 .DS_Store
+d  :               Test/
+f  :                 main.py
+f  :               .DS_Store
+d  :             graph/
+d  :               matplotlib/
+d  :                 Linear function/
+f  :                   main.py
+f  :                   data1.png
+f  :                   .DS_Store
+f  :                 .DS_Store
+f  :               .DS_Store
+d  :             mountain/
+f  :               test2.py
+f  :               .DS_Store
+d  :             number game/
+f  :               main.py
+f  :               .DS_Store
+d  :             practice/
+d  :               Pythonで始める/
+d  :                 2/
+d  :                   2-1/
+f  :                     shell
+f  :                     .DS_Store
+d  :                   2-2/
+f  :                     text.rtf
+f  :                     .DS_Store
+f  :                   .DS_Store
+d  :                 3/
+d  :                   3-1/
+f  :                     main.py
+d  :                   3-2/
+f  :                     main.py
+d  :                   3-3/
+f  :                     oseji.py
+f  :                     .DS_Store
+d  :                   3-4/
+f  :                     text.rtf
+f  :                     .DS_Store
+d  :                   3-5/
+f  :                     text.txt
+f  :                     .DS_Store
+d  :                   3-6/
+f  :                     text.txt
+f  :                   .DS_Store
+d  :                 4/
+d  :                   4-1/
+f  :                     comparisons.py
+f  :                   .DS_Store
+f  :                 .DS_Store
+f  :               .DS_Store
+d  :             Prime number/
+d  :               YesNo/
+f  :                 main.py
+f  :                 .DS_Store
+f  :               .DS_Store
+d  :             rock scissor paper/
+f  :               rock scissor paper.py
+d  :             screenshots/
+f  :               屏幕快照 2020-07-01 下午11.13.08.png
+f  :               屏幕快照 2020-06-30 下午9.23.55.png
+f  :               屏幕快照 2020-06-30 下午9.22.58.png
+f  :               屏幕快照 2020-06-29 下午9.16.26.png
+f  :               屏幕快照 2020-06-29 下午8.50.42.png
+f  :               屏幕快照 2020-06-29 下午10.01.48.png
+f  :               .DS_Store
+d  :             use FM/
+d  :               Test1_txt/
+f  :                 test.txt
+f  :                 main.py
+f  :                 abc.txt
+f  :                 abc.csv
+f  :                 .DS_Store
+d  :               Test2_csv/
+f  :                 test2.csv
+f  :                 test.csv
+f  :                 main.py
+f  :               .DS_Store
+d  :             y_n/
+f  :               main.py
+f  :               .DS_Store
+d  :             二次方程式/
+f  :               main.py
+f  :               main.html
+d  :             棱形/
+f  :               prog.py
+f  :               .DS_Store
+f  :             .DS_Store
+d  :           print/
+f  :             main.py
+d  :           scraping/
+d  :             douban/
+f  :               main.py
+f  :           .DS_Store
+d  :         Ruby/
+d  :           Hello/
+f  :             Hello.rb
+d  :         Templates/
+d  :           PHP/
+d  :             Directories/
+f  :               style.css
+f  :               index.html
+f  :               files.php
+f  :               directories.php
+f  :         .DS_Store
+f  :       my_VBA_sourses.xlsm
+f  :       empty.html
+f  :       Chrome パスワード.gsheet
+f  :       bookmarks_2020_08_15.html
+d  :     Picture-G/
+d  :       寿司打記録/
+f  :         寿司打６.png
+f  :         寿司打５.jpg
+f  :         寿司打４.jpg
+f  :         寿司打３.jpg
+f  :         寿司打２.jpg
+f  :       食塩２.jpg
+f  :       食塩１.jpg
+f  :       死神.jpg
+f  :       変更後.jpg
+f  :       変更前.jpg
+f  :       スクリーンショット 0032-08-12 23.36.59.png
+f  :       コメント 2020-08-29 221711.png
+f  :       ThanatosJoe2.svg
+f  :       ThanatosJoe2.jpg
+f  :       Thanatos3.svg
+f  :       Thanatos3.jpg
+f  :       Thanatos2.jpg
+f  :       Thanatos1.jpg
+f  :       Thanatos.svg
+f  :       Thanatos.jpg
+f  :       Screenshot 2021-01-15 220901.png
+f  :       Screenshot 2021-01-15 220901.gdoc
+f  :       Screenshot 2020-12-14 200015.jpg
+f  :       Screenshot 2020-12-14 200015.gdoc
+f  :       Screenshot 2020-11-02 192135.jpg
+f  :       Screenshot 2020-10-14 221657.png
+f  :       Screenshot 2020-10-14 221607.png
+f  :       Screenshot 2020-10-14 221529.png
+f  :       Screenshot 2020-10-14 221419.png
+f  :       Screenshot 2020-10-09 221013.png
+f  :       Screenshot 2020-10-08 222205.png
+f  :       Screenshot 2020-10-08 222205.gdoc
+f  :       Screenshot 2020-09-27 160151.png
+f  :       Screen Shot 0002-11-14 at 14.51.35.png
+f  :       Pythonエラー.png
+f  :       Python.png
+f  :       Python.gif
+f  :       main.java.png
+f  :       Jukebox.png
+f  :       inddex.html
+f  :       inddex copy.html
+f  :       graff.png
+f  :       EhuPP-jU0AE8cL8.jpeg
+f  :       drow2.svg
+f  :       drow2.jpg
+f  :       drow2 (1).jpg
+f  :       draw icon.svg
+f  :       draw icon.jpg のコピー
+f  :       draw icon.jpg
+f  :       draw black.svg
+f  :       draw black.jpg
+f  :       draw black copy.jpg
+f  :       costume1.svg
+f  :       costume1.jpg
+f  :       2.svg
+f  :       2.png
+f  :       1.svg
+f  :       1.jpg
+f  :       1 (1).jpg
+f  :     オシロスコープ.mp4
+f  :     Screenshot_20201221-073945_Internet.jpg
+f  :     Screenshot 2021-01-19 201834.png
+f  :     Screenshot 2021-01-03 225110.jpg
+f  :     main.py
+f  :     desktop.ini
+f  :     Chrome パスワード.gsheet
+f  :     13421478342690.jpg
+d  :     Desktop/
+d  :     install and setup/
+f  :       XBlockly_Setup_for_x64.exe
+f  :       xampp-windows-x64-7.4.10-0-VC15-installer.exe
+f  :       WeChat_C1018.exe
+f  :       VSCodeUserSetup-x64-1.51.1.exe
+f  :       vc_redist.x64.exe
+f  :       TeamViewer_Setup.exe
+f  :       Sublime Text Build 3211 x64 Setup.exe
+f  :       sfdx-windows-amd64.exe
+f  :       setup.exe - Shortcut.lnk
+f  :       ReimageRepair.exe
+f  :       python-3.8.5-amd64.exe
+f  :       PreSonus Studio One 4 Installer.exe
+f  :       oxygen-64bit.exe
+f  :       OBS-Studio-26.0.2-Full-Installer-x64.exe
+f  :       node-v12.18.3-x64.msi
+f  :       mysql-installer-community-5.7.31.0.msi
+f  :       MuseScore-3.3.4-x86_64.msi
+f  :       jdk-8u261-windows-x64.exe
+f  :       JavaSetup8u261.exe
+f  :       IQIYIsetup_z21.exe
+f  :       installbackupandsync.exe
+f  :       httpd-2.4.46-win64-VS16.zip
+f  :       groovy-2.4.18-installer.exe
+f  :       Greenshot-INSTALLER-1.2.10.6-RELEASE.exe
+f  :       GitHubDesktopSetup.exe
+f  :       Git-2.29.1-64-bit.exe
+f  :       fzzq_xf.exe
+f  :       fvl_setup_150113u.exe
+f  :       EveryonePiano2.2.10.16_setup.exe
+f  :       epp520_2281_64bit.exe
+f  :       epp380_64bit.exe
+f  :       dotnet-sdk-3.1.401-win-x64.exe
+f  :       AtomSetup-x64.exe
+f  :       7z2002-x64.exe
+f  :     プログラム - ショートカット.lnk
+f  :     Visual Studio Code.lnk
+f  :     Visual Studio 2019.lnk
+f  :     source - Shortcut.lnk
+f  :     Soundcard Scope.lnk
+f  :     screenshots - Shortcut.lnk
+f  :     Python37_64 - ショートカット.lnk
+f  :     Programs - Shortcut.lnk
+f  :     Microsoft Teams.lnk
+f  :     Joe - Shortcut.lnk
+f  :     HTML tester - Chrome.lnk
+f  :     Google Drive.lnk
+f  :     Google Chrome.lnk
+f  :     EveryonePiano.lnk
+f  :     Drive - Shortcut.lnk
+f  :     desktop.ini
+f  :     Cisco Webex Meetings.lnk

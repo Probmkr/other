@@ -6,7 +6,22 @@ namespace ClassPractice
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("\n\nPlayer\n\n");
+            Player P1 = new Player("Player1", 100);
+            P1.Attack(10);
+            P1.Defence();
+            P1.Damage(12);
+            int P1HP = P1.GetHP();
+            Console.WriteLine(P1HP);
+            Console.WriteLine("\n\nWizard\n\n");
+            Wizard P2 = new Wizard("Player2", 80, 100);
+            P2.Attack(20);
+            P2.Defence();
+            P2.Damage(10);
+            int P2HP = P2.GetHP();
+            Console.WriteLine(P2HP);
+            P2.MagicAttack(30);
+            Console.WriteLine(P2.GetMP());
         }
     }
 }

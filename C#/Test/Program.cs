@@ -10,6 +10,7 @@ namespace Test
             ArrayList list1 = new ArrayList();
             list1.Add("aaa");
             Console.WriteLine(list1[1]);
+            // will back ArgumentOutOfRangeException
         }
     }
 }

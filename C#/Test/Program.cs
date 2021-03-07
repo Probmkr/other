@@ -6,11 +6,10 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            // int a = 1;
-            // if (0 < a < 10)
-            // {
-            //     print("aaa");
-            // }
+            int input;
+            Console.WriteLine("Please enter one number.");
+            input = int.Parse(Console.ReadLine());
+            Console.WriteLine(input);
         }
     }
 }

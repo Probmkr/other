@@ -2,7 +2,7 @@ using System;
 
 namespace ClassPractice
 {
-    public class Wizard : Player
+    class Wizard : Player
     {
         protected int MP;
 

@@ -2,7 +2,7 @@ using System;
 
 namespace ClassPractice
 {
-    public abstract class Player
+    abstract class Player
     {
         protected string name;
         protected int HP;

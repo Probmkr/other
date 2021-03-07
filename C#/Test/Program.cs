@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Test
 {
@@ -6,10 +7,9 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            int input;
-            Console.WriteLine("Please enter one number.");
-            input = int.Parse(Console.ReadLine());
-            Console.WriteLine(input);
+            ArrayList list1 = new ArrayList();
+            list1.Add("aaa");
+            Console.WriteLine(list1[1]);
         }
     }
 }

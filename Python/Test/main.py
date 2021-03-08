@@ -1,22 +1,30 @@
-import math
+"""
+Perform Run Length Encoding compression on a string.
+"""
 
-def estimated(types,size,other):
-    if types == 1:
-        number = math.ceil(size * 80 / other)
-        print('项目大小为%.1f个标准项目，如果需要在%.1f个工时完成，则需要人力数量为：%d人' %(size,other,number)) 
-    elif types == 2:
-        time = size * 80 / other
-        print('项目大小为%.1f个标准项目，使用%d个人力完成，则需要工时数量为：%.1f个' %(size,other,time))  
+def compress(raw: str) -> bytes:
+    result = b''
+    try:
+        prevent = raw[0]
+    except IndexError:
+        return(b'')
+    count = 0
+    print(len(raw))
 
+    for i in range(len(raw)):
+        thisStr = raw[i]
+        if (prevent != thisStr):
+            result += bytes([count]) + raw[i - 1].encode()
+            count = 1
+            prevent = thisStr
+        else:
+            count += 1
 
+    result += bytes([count]) + raw[i].encode()
+    return result
 
-types = input('请选择计算类型：（1-人力计算，2-工时计算）')
-size = input('请输入项目大小：（1代表标准大小，可以输入小数）')
-if types == 1:
-	other = input('请输入人力数量：（请输入整数）')
-elif types == 2:
-	other = input('请输入工时数量：（请输入小数）')
-else:
-	raise
+print(compress('\N{GRINNING FACE} \N{SHAMROCK}'))
 
-estimated(types,size,other)
+b'\x01\xf0\x01\x9f\x01\x98\x01\x80\x01 \x01\xe2\x02\x98'
+b'\x01\xf0\x9f\x98\x80\x01 \x01\xe2\x98\x98'
+b'\x01\xf0\x9f\x98\x80\x01 \x01\xe2\x98\x98'

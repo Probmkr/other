@@ -20,6 +20,10 @@ namespace _3_3
             {
                 Console.WriteLine("x < y");
             }
+            else
+            {
+                Console.WriteLine("x = y");
+            }
         }
     }
 }

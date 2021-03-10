@@ -1,0 +1,16 @@
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\bin\Debug\net5.0\4-4.exe
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\bin\Debug\net5.0\4-4.deps.json
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\bin\Debug\net5.0\4-4.runtimeconfig.json
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\bin\Debug\net5.0\4-4.runtimeconfig.dev.json
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\bin\Debug\net5.0\4-4.dll
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\bin\Debug\net5.0\ref\4-4.dll
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\bin\Debug\net5.0\4-4.pdb
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\4-4.csprojAssemblyReference.cache
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\4-4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\4-4.AssemblyInfoInputs.cache
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\4-4.AssemblyInfo.cs
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\4-4.csproj.CoreCompileInputs.cache
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\4-4.dll
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\ref\4-4.dll
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\4-4.pdb
+C:\Users\zhouy\source\repos\other\C#\kitako.tokyo practices\4\4-4\obj\Debug\net5.0\4-4.genruntimeconfig.cache

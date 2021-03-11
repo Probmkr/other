@@ -1,0 +1,16 @@
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\bin\Debug\net5.0\Lambda.exe
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\bin\Debug\net5.0\Lambda.deps.json
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\bin\Debug\net5.0\Lambda.runtimeconfig.json
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\bin\Debug\net5.0\Lambda.runtimeconfig.dev.json
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\bin\Debug\net5.0\Lambda.dll
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\bin\Debug\net5.0\ref\Lambda.dll
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\bin\Debug\net5.0\Lambda.pdb
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\Lambda.csprojAssemblyReference.cache
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\Lambda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\Lambda.AssemblyInfoInputs.cache
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\Lambda.AssemblyInfo.cs
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\Lambda.csproj.CoreCompileInputs.cache
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\Lambda.dll
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\ref\Lambda.dll
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\Lambda.pdb
+C:\Users\zhouy\source\repos\other\C#\Practice\Lambda\obj\Debug\net5.0\Lambda.genruntimeconfig.cache

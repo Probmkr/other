@@ -1,0 +1,16 @@
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\Ref.csprojAssemblyReference.cache
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\Ref.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\Ref.AssemblyInfoInputs.cache
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\Ref.AssemblyInfo.cs
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\Ref.csproj.CoreCompileInputs.cache
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\bin\Debug\net5.0\Ref.exe
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\bin\Debug\net5.0\Ref.deps.json
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\bin\Debug\net5.0\Ref.runtimeconfig.json
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\bin\Debug\net5.0\Ref.runtimeconfig.dev.json
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\bin\Debug\net5.0\Ref.dll
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\bin\Debug\net5.0\ref\Ref.dll
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\bin\Debug\net5.0\Ref.pdb
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\Ref.dll
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\ref\Ref.dll
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\Ref.pdb
+C:\Users\zhouy\source\repos\other\C#\Practice\Ref\obj\Debug\net5.0\Ref.genruntimeconfig.cache

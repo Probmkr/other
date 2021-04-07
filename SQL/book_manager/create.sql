@@ -3,7 +3,7 @@ create table if not exists books (
     book_name nvarchar(40) not null,
     author nvarchar(40),
     price int,
-    status tinyint not null
+    status tinyint not null default (1)
 );
 
 create table if not exists users (

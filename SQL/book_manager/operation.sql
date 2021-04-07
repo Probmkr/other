@@ -20,14 +20,22 @@ insert into users (user_name, password, birthday) values (
     'Thanatos', 'thanat9191', null
 );
 
-insert into books (book_name, author, price, status) values (
-    'aaa', 'aaaa', 100, 1
+insert into books (book_name, author, price) values (
+    'aaa', 'aaaa', 100
 ), (
-    'bbb', 'aaaa', 100, 1
+    'bbb', 'aaaa', 100
 ), (
-    'ccc', 'bbbb', 200, 1
+    'ccc', 'bbbb', 200
 ), (
-    'ddd', 'bbbb', 200, 1
+    'ddd', 'bbbb', 200
+), (
+    'eee', 'bbbb', 250
+), (
+    'aaa', 'cc', 500
+), (
+    'bcb', 'cc', 345
+), (
+    'gbd', 'cc', 670
 );
 
 insert into lend_status (user_id, book_id) values (

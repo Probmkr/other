@@ -1,0 +1,1 @@
+update books set book_name = ''

@@ -1,4 +1,6 @@
-alter table books modify book_id int;
-alter table books auto_increment = 9;
-alter table books modify book_id int auto_increment;
-show table status like 'books'\G
+delimiter //
+create trigger borrow on borrow_status for each row
+begin
+insert into b_r_log (user_id, book_id, b_r) values (
+    new.user_id, new.book_id, 1
+)

@@ -18,14 +18,18 @@ create table if not exists b_r_log (
     user_id int not null,
     book_id int not null,
     b_r tinyint not null,
-    date date default (curdate())
+    date date default (curdate()),
+    foreign key book_id_fk (book_id) references books (book_id),
+    foreign key user_id_fk (user_id) references users (user_id)
 );
 
 create table if not exists borrow_status (
     record_id int primary key auto_increment,
     user_id int not null,
     book_id int not null,
-    date date not null default (curdate())
+    date date not null default (curdate()),
+    foreign key book_id_fk (book_id) references books (book_id),
+    foreign key user_id_fk (user_id) references users (user_id)
 );
 
 create table if not exists status_explain (

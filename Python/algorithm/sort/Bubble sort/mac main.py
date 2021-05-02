@@ -11,12 +11,12 @@ def swap(swapList, first, second):
 # numbers = list(range(1000))
 
 numbers = []
-for i in range(44):
+for i in range(10000):
     numbers.append(rdm.randrange(0, 100))
 
 # print(numbers)
 
-# print('\n'*30, numbers, '\n'*20)
+print('\n'*30, numbers, '\n'*20)
 # time.sleep(3)
 # print('\n'*50)
 
@@ -25,12 +25,13 @@ lenghth = len(numbers)
 for i in range(lenghth - 1):
     for j in range(lenghth - i - 1):
         if numbers[j] > numbers[j + 1]:
-            print(f'{numbers[j]:3}, {numbers[j + 1]:3}', end=" ")
+            # print(f'{numbers[j]:3}, {numbers[j + 1]:3}', end=" ")
             # print(numbers)
             swap(numbers, j, j + 1)
         else:
-            print('        ', end=' ')
-        print(numbers)
+            pass
+            # print('        ', end=' ')
+        # print(numbers)
         # time.sleep(0.01)
 
 print('\n\n\n\n', numbers)

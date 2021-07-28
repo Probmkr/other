@@ -8,7 +8,7 @@ insert into status_explain values (
     2, 'be borrowed'
 );
 
-insert into l_r_explain values (
+insert into b_r_explain values (
     1, 'borrow'
 ), (
     2, 'return'
@@ -38,17 +38,17 @@ insert into books (book_name, author, price) values (
     'gbd', 'cc', 670
 );
 
-insert into lend_status (user_id, book_id) values (
+insert into borrow_status (user_id, book_id) values (
     1, 3
 ), (
     2, 1
 );
 
 update books set status = 2 where book_id in (
-    select book_id from lend_status
+    select book_id from borrow_status
 );
 
-insert into l_r_log (user_id, book_id, l_r) values (
+insert into b_r_log (user_id, book_id, b_r) values (
     1, 3, 1
 ), (
     2, 1, 1

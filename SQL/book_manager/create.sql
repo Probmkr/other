@@ -13,19 +13,23 @@ create table if not exists users (
     birthday date
 );
 
-create table if not exists l_r_log (
+create table if not exists b_r_log (
     record_id int primary key auto_increment,
     user_id int not null,
     book_id int not null,
-    l_r tinyint not null,
-    date date default (curdate())
+    b_r tinyint not null,
+    date date default (curdate()),
+    foreign key book_id_fk (book_id) references books (book_id),
+    foreign key user_id_fk (user_id) references users (user_id)
 );
 
-create table if not exists lend_status (
+create table if not exists borrow_status (
     record_id int primary key auto_increment,
     user_id int not null,
     book_id int not null,
-    date date not null default (curdate())
+    date date not null default (curdate()),
+    foreign key book_id_fk (book_id) references books (book_id),
+    foreign key user_id_fk (user_id) references users (user_id)
 );
 
 create table if not exists status_explain (
@@ -33,7 +37,7 @@ create table if not exists status_explain (
     status_name varchar(20)
 );
 
-create table if not exists l_r_explain (
-    l_r tinyint,
-    l_r_name varchar(20)
+create table if not exists b_r_explain (
+    b_r tinyint,
+    b_r_name varchar(20)
 );

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CrT+5xP7gT1Lo5AvKXNY2iCWrTD6yeONPefK0r/b2r40MVmqLa6vmMYxbrEKi/j+swxgd7h+rXM5KQyJ2d6NOA==",
+  "dgSpecHash": "qEem+Vfl0XlqRc2xGBni7DZSxo2QN3w/kdSYaOcfwyZipt/rSvGHnI0e6iAG+bOSAtHDFQeq9fEvwGC70NaLEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zhouy\\source\\repos\\other\\C#\\Test\\Test.csproj",
+  "projectFilePath": "/Users/AllenZhou/Documents/Joe/vscode/other/C#/Test/Test.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

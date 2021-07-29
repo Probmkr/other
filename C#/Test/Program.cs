@@ -1,48 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Collections;
+using System.Linq;
 namespace Test
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            Dictionary<string, dynamic> dict1 = new Dictionary<string, dynamic>()
-            {
-                {"int", 12},
-                {"string", "this is string"},
-                {"float", 13.4}
-            };
+class Person
+{
+public string Name;
+public int Age;
+}
+class Program
+{
 
-            Console.WriteLine("\n\ndict1\n");
-            foreach (KeyValuePair<string, dynamic> item in dict1)
-            {
-                Console.WriteLine("{0, -10} : {1, -16}", item.Key, item.Value);
-            }
+static void Main(string[] args)
+{
+List<Person> persons = new List<Person> {
+new Person { Name = "Taro", Age = 25},
+new Person { Name = "Jiro", Age = 22},
+new Person { Name = "Saburo", Age = 19},
+new Person { Name = "Shiro", Age = 16},
+};
+var nage = persons.Where(person => person.Age >= 20).Select(pr => new { pr.Name } );
+foreach (var item in nage)
+{
+    Console.WriteLine(item);
+}
+}
 
-            var dict2 = new Dictionary<string, dynamic>(dict1);
+}
 
-            Console.WriteLine("\n\ndict2\n");
-            foreach (KeyValuePair<string, dynamic> item in dict2)
-            {
-                Console.WriteLine("{0, -10} : {1, -16}", item.Key, item.Value);
-            }
-
-            dict1["int"] = 13;
-
-            Console.WriteLine("\n\nedited dict1  dict[\"int\"] = 13;");
-
-            Console.WriteLine("\n\ndict1\n");
-            foreach (KeyValuePair<string, dynamic> item in dict1)
-            {
-                Console.WriteLine("{0, -10} : {1, -16}", item.Key, item.Value);
-            }
-
-            Console.WriteLine("\n\ndict2\n");
-            foreach (KeyValuePair<string, dynamic> item in dict2)
-            {
-                Console.WriteLine("{0, -10} : {1, -16}", item.Key, item.Value);
-            }
-        }
-    }
 }

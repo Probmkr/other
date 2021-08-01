@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zhouy\\source\\repos\\other\\C#\\ClassPractice\\class.csproj": {}
+    "C:\\Users\\zhouy\\source\\repos\\other\\C#\\Practice\\ClassPractice\\class.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zhouy\\source\\repos\\other\\C#\\ClassPractice\\class.csproj": {
+    "C:\\Users\\zhouy\\source\\repos\\other\\C#\\Practice\\ClassPractice\\class.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zhouy\\source\\repos\\other\\C#\\ClassPractice\\class.csproj",
+        "projectUniqueName": "C:\\Users\\zhouy\\source\\repos\\other\\C#\\Practice\\ClassPractice\\class.csproj",
         "projectName": "class",
-        "projectPath": "C:\\Users\\zhouy\\source\\repos\\other\\C#\\ClassPractice\\class.csproj",
+        "projectPath": "C:\\Users\\zhouy\\source\\repos\\other\\C#\\Practice\\ClassPractice\\class.csproj",
         "packagesPath": "C:\\Users\\zhouy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zhouy\\source\\repos\\other\\C#\\ClassPractice\\obj\\",
+        "outputPath": "C:\\Users\\zhouy\\source\\repos\\other\\C#\\Practice\\ClassPractice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zhouy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

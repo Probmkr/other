@@ -1,0 +1,5 @@
+python "..\program 01\all.py"
+@REM python "..\program 02\all.py"
+python "..\program 03\all.py"
+python "..\program 04\all.py"
+python "..\program 05\all.py"

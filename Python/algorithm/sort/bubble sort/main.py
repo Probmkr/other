@@ -1,11 +1,44 @@
+import time
+import random as rdm
 
-numbers = list(map(int, input().split(' ')))
+def swap(swapList, first, second):
+    swapList[first], swapList[second] = swapList[second], swapList[first]
 
-def swap(swapList, index1, index2):
-    numbers[index1], numbers[index2] = numbers[index2], numbers[index1]
+count = 0
 
-for j in range(len(numbers) - 1):
-    if numbers[j] > numbers[j + 1]:
-        swap(numbers, j, j + 1)
+# numbers = list(map(int, input().split()))
 
-print(numbers)
+numbers = list(reversed(range(50)))
+
+# numbers = list(range(1000))
+
+# numbers = []
+# for i in range(50):
+#     numbers.append(rdm.randrange(0, 100))
+
+
+numbers = [4, 5, 3, 7, 43, 5, 2, 4, 3 ,354, 62, 3, 2, 345, 32, 1234, 123, 4, 12, 24 ,123, 234]
+
+# print(numbers)
+
+print('\n'*30, numbers, '\n'*20)
+# time.sleep(3)
+# print('\n'*50)
+
+lenghth = len(numbers)
+
+for i in range(lenghth - 1):
+    for j in range(lenghth - i - 1):
+        if numbers[j] > numbers[j + 1]:
+            print(f'{numbers[j]:4}, {numbers[j + 1]:4}', end=" ")
+            # print(numbers)
+            swap(numbers, j, j + 1)
+        else:
+            pass
+            print('          ', end=' ')
+        print(numbers)
+        time.sleep(0.01)
+        count += 1
+
+print('\n\n\n\n', numbers)
+print(count)

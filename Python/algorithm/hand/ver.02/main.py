@@ -5,14 +5,12 @@ import copy as cpy
 test = False
 
 hands = ['rock', 'scissors', 'paper']
-preHand = None
 count = 0
 winlose = {
     'player': 0,
     'computer': 0,
     'tie': 0
 }
-patterns = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 iphand = 0
 sphand = ''
@@ -22,12 +20,18 @@ schand = ''
 # Data
 
 phands = [0, 0, 0]
+preHand = None
+patterns = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 # Data
 
 # Fucntion
 
-def Parcentage(tList):
+def PercOfPattern(pattern):
+    pattern = pattern.copy()
+    return Percentage(pattern)
+
+def Percentage(tList):
     tList = tList.copy()
     sumList = sum(tList)
     lenList = len(tList)
@@ -47,7 +51,7 @@ def Frequency(phands):
     sortBig = list(reversed(np.array(phands).argsort()))
     phands[sortBig[0]] *= 3
     phands[sortBig[1]] *= 2
-    phandsPerc = Parcentage(phands)
+    phandsPerc = Percentage(phands)
     rndnum = rnd.randint(1, 100)
 
     if (not phandsPerc):
@@ -69,15 +73,30 @@ def FrequencyChange(phands):
     # sortBig = list(reversed(np.array(phands).argsort()))
     # phands[sortBig[0]] *= 3
     # phands[sortBig[1]] *= 2
-    phandsPerc = Parcentage(phands)
 
-    return phandsPerc
+    return Percentage(phands)
 
-def Pattern(phand, patterns, phands):
+def Pattern(patterns, phands):
     print(patterns)
+    PatternSub(patterns, phands)
     return Frequency(phands)
 
-# Function
+def PatternSub(patterns, phands):
+    phandsPerc = FrequencyChange(phands)
+    patternPerc = None
+    print(phandsPerc)
+    try:
+        patternPerc = PercOfPattern(patterns[preHand])
+        print(patternPerc)
+    except TypeError:
+        return rnd.randint(0, 2)
+
+    # Calc
+
+
+
+
+# /Function
 
 
 while 1:
@@ -99,10 +118,12 @@ while 1:
 
     # AI
 
-    ichand = Pattern(iphand, patterns, phands)
+    ichand = Pattern(patterns, phands)
+    schand = hands[ichand]
 
     # AI
 
+    print('\n')
     print(f'Your hand is         {sphand}')
     print(f'The computer hand is {schand}')
 
@@ -116,12 +137,13 @@ while 1:
         print('You lose...')
         winlose['computer'] += 1
     count += 1
+    print('\n')
 
     # Calc data
 
     phands[iphand] += 1
 
-    print(preHand, iphand)
+    # print(preHand, iphand)
     try:
         patterns[preHand][iphand] += 1
     except TypeError:
@@ -131,8 +153,10 @@ while 1:
 
     # Calc data
 
+print('\n'*3)
 print(f'you played {count} games')
 print('You won', winlose['player'])
 print('computer wons', winlose['computer'])
 print(winlose['tie'] if winlose['tie'] > 0 else 'no',
       'tie game{0}'.format('s' if winlose['tie'] > 1 else ''))
+print('\n'*3)

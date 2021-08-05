@@ -1,6 +1,6 @@
 import random as rnd
 import numpy as np
-from typing import *
+import copy as cpy
 
 test = False
 
@@ -12,7 +12,12 @@ winlose = {
     'computer': 0,
     'tie': 0
 }
-patterns = [[], [], []]
+patterns = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+iphand = 0
+sphand = ''
+ichand = 0
+schand = ''
 
 # Data
 
@@ -22,22 +27,19 @@ phands = [0, 0, 0]
 
 # Fucntion
 
-def Parcentage(phands):
-    phands = phands.copy()
-    sortBig = list(reversed(np.array(phands).argsort()))
-    phands[sortBig[0]] *= 3
-    phands[sortBig[1]] *= 2
-    print(sortBig)
-    print(phands)
-    phandsSum = sum(phands)
-    phandsPerc = [None]*3
-    rndnum = rnd.randint(1, 100)
+def Parcentage(tList):
+    tList = tList.copy()
+    sumList = sum(tList)
+    lenList = len(tList)
+    percList = [None]*lenList
 
     try:
-        for i in range(3):
-            phandsPerc[i] = round(phands[i] / phandsSum * 100)
+        for i in range(lenList):
+            percList[i] = round(tList[i] / sumList * 100)
     except ZeroDivisionError:
-        rndnum = 101
+        return False
+
+    return percList
 
 def Frequency(phands):
     retVal = 0
@@ -45,32 +47,35 @@ def Frequency(phands):
     sortBig = list(reversed(np.array(phands).argsort()))
     phands[sortBig[0]] *= 3
     phands[sortBig[1]] *= 2
-    print(sortBig)
-    print(phands)
-    phandsSum = sum(phands)
-    phandsPerc = [None]*3
+    phandsPerc = Parcentage(phands)
     rndnum = rnd.randint(1, 100)
 
-    try:
-        for i in range(3):
-            phandsPerc[i] = round(phands[i] / phandsSum * 100)
-    except ZeroDivisionError:
-        rndnum = 101
+    if (not phandsPerc):
+        return rnd.randint(0, 2)
 
-    if rndnum <= phands[0]:
+    if rndnum <= phandsPerc[0]:
         retVal = 2
-    elif rndnum <= sum(phands[0:2]):
+    elif rndnum <= sum(phandsPerc[0:2]):
         retVal = 0
-    elif rndnum <= sum(phands[0:3]):
+    elif rndnum <= sum(phandsPerc[0:3]):
         retVal = 1
     else:
         retVal = rnd.randint(0, 2)
 
     return retVal
 
-def Pattern(phand, patterns, phands):
-    pass
+def FrequencyChange(phands):
+    phands = phands.copy()
+    # sortBig = list(reversed(np.array(phands).argsort()))
+    # phands[sortBig[0]] *= 3
+    # phands[sortBig[1]] *= 2
+    phandsPerc = Parcentage(phands)
 
+    return phandsPerc
+
+def Pattern(phand, patterns, phands):
+    print(patterns)
+    return Frequency(phands)
 
 # Function
 
@@ -94,8 +99,7 @@ while 1:
 
     # AI
 
-    ichand = Frequency(phands)
-    schand = hands[ichand]
+    ichand = Pattern(iphand, patterns, phands)
 
     # AI
 
@@ -117,9 +121,10 @@ while 1:
 
     phands[iphand] += 1
 
+    print(preHand, iphand)
     try:
-        patterns[preHand].append(iphand)
-    except IndexError:
+        patterns[preHand][iphand] += 1
+    except TypeError:
         pass
 
     preHand = iphand

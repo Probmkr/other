@@ -1,6 +1,5 @@
 import random as rnd
 import numpy as np
-from typing import *
 
 test = False
 
@@ -29,7 +28,7 @@ def Frequency(phands):
     print(sortBig)
     print(phands)
     phandsSum = sum(phands)
-    phandsPerc = [None]*3
+    phandsPerc = [0]*3
     rndnum = rnd.randint(1, 100)
 
     try:
@@ -38,11 +37,11 @@ def Frequency(phands):
     except ZeroDivisionError:
         rndnum = 101
 
-    if rndnum <= phands[0]:
+    if rndnum <= phandsPerc[0]:
         retVal = 2
-    elif rndnum <= sum(phands[0:2]):
+    elif rndnum <= sum(phandsPerc[0:2]):
         retVal = 0
-    elif rndnum <= sum(phands[0:3]):
+    elif rndnum <= sum(phandsPerc[0:3]):
         retVal = 1
     else:
         retVal = rnd.randint(0, 2)

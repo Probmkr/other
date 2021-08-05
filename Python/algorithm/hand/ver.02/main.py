@@ -76,7 +76,7 @@ def FrequencyChange(phands):
 
     return Percentage(phands)
 
-def Pattern(patterns, phands):
+def Pattern(patterns, phanRds):
     print(patterns)
     PatternSub(patterns, phands)
     return Frequency(phands)

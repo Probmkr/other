@@ -2,7 +2,10 @@ import random as rnd
 import numpy as np
 import copy as cpy
 
-test = False
+test = True
+testlist = [0, 1, 2, 1, 1]*100
+print(testlist)
+input()
 
 hands = ['rock', 'scissors', 'paper']
 count = 0
@@ -76,12 +79,12 @@ def FrequencyChange(phands):
 
     return Percentage(phands)
 
-def Pattern(patterns, phanRds):
+def Patterna(patterns, phanRds):
     print(patterns)
-    PatternSub(patterns, phands)
+    Pattern(patterns, phands)
     return Frequency(phands)
 
-def PatternSub(patterns, phands):
+def Pattern(patterns, phands):
     phandsPerc = FrequencyChange(phands)
     patternPerc = None
     print(phandsPerc)
@@ -91,67 +94,100 @@ def PatternSub(patterns, phands):
     except TypeError:
         return rnd.randint(0, 2)
 
+    resultPerc = []
+
     # Calc
 
+    try:
+        for i in range(3):
+            resultPerc.append(phandsPerc[i] * patternPerc[i])
+    except TypeError:
+        return rnd.randint(0, 2)
 
+    resultPerc = Percentage(resultPerc)
 
+    rndnum = rnd.randint(1, 100)
 
+    if rndnum <= resultPerc[0]:
+        retVal = 2
+    elif rndnum <= sum(resultPerc[0:2]):
+        retVal = 0
+    elif rndnum <= sum(resultPerc[0:3]):
+        retVal = 1
+    else:
+        retVal = rnd.randint(0, 2)
+
+    return retVal
+
+j = 0
 # /Function
 
-
-while 1:
-    cmd = -1
-    try:
-        cmd = int(input('Enter your hand [1: rock] [2: scissors] [3: paper] or enter [0: end] > ')) - 1
-    except ValueError:
-        if not test:
+try:
+    while 1:
+        cmd = 0
+        try:
+            # cmd = int(input('Enter your hand [1: rock] [2: scissors] [3: paper] or enter [0: end] > ')) - 1
+            pass
+        except ValueError:
+            if not test:
+                print('Please enter correct number')
+                break
+            else:
+                print('continue')
+        if cmd == -1:
+            print('exit')
+            break
+        iphand = cmd if test != True else 2
+        iphand = rnd.randint(0, 2)
+        iphand = testlist[j]
+        print(iphand)
+        try:
+            sphand = hands[iphand]
+        except IndexError:
             print('Please enter correct number')
             break
-    if cmd == -1:
-        break
-    iphand = cmd if test != True else 2
-    try:
-        sphand = hands[iphand]
-    except IndexError:
-        print('Please enter correct number')
-        break
 
-    # AI
+        # AI
 
-    ichand = Pattern(patterns, phands)
-    schand = hands[ichand]
+        ichand = Pattern(patterns, phands)
+        schand = hands[ichand]
 
-    # AI
+        # AI
 
-    print('\n')
-    print(f'Your hand is         {sphand}')
-    print(f'The computer hand is {schand}')
+        print('\n')
+        print(f'Your hand is         {sphand}')
+        print(f'The computer hand is {schand}')
 
-    if sphand == schand:
-        print('tie')
-        winlose['tie'] += 1
-    elif sphand == hands[ichand - 1]:
-        print('You win!')
-        winlose['player'] += 1
-    else:
-        print('You lose...')
-        winlose['computer'] += 1
-    count += 1
-    print('\n')
+        if sphand == schand:
+            print('tie')
+            winlose['tie'] += 1
+        elif sphand == hands[ichand - 1]:
+            print('You win!')
+            winlose['player'] += 1
+        else:
+            print('You lose...')
+            winlose['computer'] += 1
+        count += 1
+        print('\n')
 
-    # Calc data
+        # Calc data
 
-    phands[iphand] += 1
+        phands[iphand] += 1
 
-    # print(preHand, iphand)
-    try:
-        patterns[preHand][iphand] += 1
-    except TypeError:
-        pass
+        # print(preHand, iphand)
+        try:
+            patterns[preHand][iphand] += 1
+        except TypeError:
+            pass
 
-    preHand = iphand
+        preHand = iphand
 
-    # Calc data
+        j+= 1
+
+        # Calc data
+except (KeyboardInterrupt, IndexError):
+    pass
+
 
 print('\n'*3)
 print(f'you played {count} games')

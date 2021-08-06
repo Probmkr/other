@@ -1,7 +1,7 @@
 import random as rnd
 import numpy as np
 
-test = False
+test = True
 
 hands = ['rock', 'scissors', 'paper']
 count = 0
@@ -61,6 +61,7 @@ while 1:
     if cmd == -1:
         break
     iphand = cmd if test != True else 2
+    iphand = rnd.randint(0, 2)
     try:
         sphand = hands[iphand]
     except IndexError:

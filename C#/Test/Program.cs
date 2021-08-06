@@ -2,19 +2,15 @@
 
 namespace Test
 {
-    class Prog
+    public class Test
     {
-        static void Main(string[] arg)
+        public static void Main(string[] arg)
         {
             Console.WriteLine("Hello World!");
-        }
-    }
-
-    class Program
-    {
-        static void Main(string[] arg)
-        {
-            Console.WriteLine("Hello World2!");
+            if(arg.Length >= 1)
+            {
+                Console.WriteLine(arg[0]);
+            }
         }
     }
 }

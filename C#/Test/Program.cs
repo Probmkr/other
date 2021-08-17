@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Test
 {
@@ -7,12 +8,9 @@ namespace Test
     {
         public static void Main(string[] arg)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("C:/Users/zhoy/source/");
-            if(arg.Length >= 1)
-            {
-                Console.WriteLine(arg[0]);
-            }
+            string test = "aaa=ttt&bbb=iii";
+            string replaced = Regex.Replace(test, "(.+)=(.+)&(.+)=(.+)", "(.+) : (.+), (.+) : (.+)");
+            Console.WriteLine(replaced);
         }
     }
 }

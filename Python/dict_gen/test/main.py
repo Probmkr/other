@@ -1,14 +1,20 @@
+import time
 import numpy as np
+import math
 
-def gen(length):
-    dictlist = []
-    gen_one(length, dictlist)
+start = 0x20
+end = 0x7f
+length = 5
 
-def gen_one(length, dictlist):
-    pass
+dictlist = ['']*sum([math.factorial(i) for i in range(1, length+1)])*(end - start)
 
-dictcol = 20
-for i in range(dictcol):
-    for k in range(0x20, 0x7f):
-        for j in range(i+1):
-            print(bytearray.fromhex(np.base_repr(i, 16)).decode())
+for i in range(length):
+    for j in range(math.factorial(length - i)):
+        pass
+        # temp_char =
+
+
+print(len(dictlist))
+
+# for i in dictlist:
+#     print(i)

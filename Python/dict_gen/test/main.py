@@ -5,7 +5,7 @@ def gen(length):
     gen_one(length, dictlist)
 
 def gen_one(length, dictlist):
-
+    pass
 
 dictcol = 20
 for i in range(dictcol):

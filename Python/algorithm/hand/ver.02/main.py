@@ -2,7 +2,7 @@ import random as rnd
 import numpy as np
 import copy as cpy
 
-test = True
+test = False
 testlist = [0, 1, 2, 1, 1]*100
 print(testlist)
 input()
@@ -126,8 +126,8 @@ try:
     while 1:
         cmd = 0
         try:
-            # cmd = int(input('Enter your hand [1: rock] [2: scissors] [3: paper] or enter [0: end] > ')) - 1
-            pass
+            if not test:
+                cmd = int(input('Enter your hand [1: rock] [2: scissors] [3: paper] or enter [0: end] > ')) - 1
         except ValueError:
             if not test:
                 print('Please enter correct number')
@@ -138,8 +138,9 @@ try:
             print('exit')
             break
         iphand = cmd if test != True else 2
-        iphand = rnd.randint(0, 2)
-        iphand = testlist[j]
+        if test:
+            iphand = rnd.randint(0, 2)
+            iphand = testlist[j]
         print(iphand)
         try:
             sphand = hands[iphand]
@@ -192,7 +193,7 @@ except (KeyboardInterrupt, IndexError):
 print('\n'*3)
 print(f'you played {count} games')
 print('You won', winlose['player'])
-print('computer wons', winlose['computer'])
+print('computer won', winlose['computer'])
 print(winlose['tie'] if winlose['tie'] > 0 else 'no',
       'tie game{0}'.format('s' if winlose['tie'] > 1 else ''))
 print('\n'*3)

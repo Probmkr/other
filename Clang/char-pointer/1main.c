@@ -3,10 +3,10 @@
 
 int main()
 {
-    char array[7];
-    char *ptr;
-    strcpy(array, "abcdef");
-    ptr = &(array[0]);
-    strcpy(ptr, "ghijkl");
-    printf(" array = %s\n ptr = %s\n", array, ptr);
+    char *stringarr[];
+    char *onestring;
+    char a[] = "abcde";
+    char b[] = "fghij";
+    char c[] = "klmno";
+
 }

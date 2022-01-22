@@ -1,8 +1,11 @@
 {
     "files.associations": {
-        "ostream": "cpp"
+        "*.ejs": "html",
+        "ostream": "cpp",
+        "stdio.h": "c"
     },
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.linting.pylamaEnabled": false
+    "python.linting.pylamaEnabled": false,
+    "C_Cpp.errorSquiggles": "Disabled"
 }

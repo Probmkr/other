@@ -3,7 +3,7 @@
 
 int main()
 {
-    char *stringarr[];
+    char *stringarr[3];
     char *onestring;
     char a[] = "abcde";
     char b[] = "fghij";

@@ -7,5 +7,5 @@
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.linting.pylamaEnabled": false,
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Enabled"
 }

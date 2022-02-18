@@ -3,10 +3,10 @@
 
 int main()
 {
-    char *stringarr[3];
-    char *onestring;
-    char a[] = "abcde";
-    char b[] = "fghij";
-    char c[] = "klmno";
-
+  char *onestring = "test5";
+  // printf("%s\n", onestring);
+  // printf("%lu\n", sizeof(onestring));
+  // printf("%s\n", onestring*);
+  // printf("%lu\n", sizeof(char*));
+  printf("%lu", strlen(onestring));
 }

@@ -5,8 +5,7 @@ using namespace std;
 // using ll = long long;
 
 int main() {
-  string str = "abcde";
-  for(int i = 0; i<str.length(); i++) {
-    cout << str[i] << endl;
-  }
+  int *p;
+  p = p;
+  cout << *p << endl;
 }

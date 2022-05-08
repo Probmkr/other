@@ -5,7 +5,7 @@ using namespace std;
 // using ll = long long;
 
 int main() {
-  int *p;
-  p = p;
-  cout << *p << endl;
+  int a;
+  int *b;
+  int *c;
 }

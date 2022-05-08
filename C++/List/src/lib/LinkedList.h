@@ -24,9 +24,9 @@ namespace my_class {
 
 		int search(ListType data) {
 			int cnt = 0;
-			Node<ListType> *ptr = this->head;
+			Node<ListType> ptr = this->head;
 			while (ptr != nullptr) {
-				if (*ptr->data == data) {
+				if (ptr->data == data) {
 					this->current = ptr;
 					return cnt;
 				}
@@ -45,8 +45,8 @@ namespace my_class {
 				this->add_first(data);
 			} else {
 				Node<ListType> *ptr = this->head;
-				while (*ptr->next != nullptr) {
-					ptr = *ptr->next;
+				while (ptr->next != nullptr) {
+					ptr = ptr->next;
 				}
 				ptr->next = this->current = new Node<ListType> (data, nullptr);
 			}
@@ -66,11 +66,11 @@ namespace my_class {
 					Node<ListType> *ptr = this->head;
 					Node<ListType> *pre = this->head;
 
-					while (*ptr->next != nullptr) {
+					while (ptr->next != nullptr) {
 						pre = ptr;
-						ptr = *ptr->next;
+						ptr = ptr->next;
 					}
-					delete *pre->next;
+					delete pre->next;
 					this->current = pre;
 					this->no--;
 				}
@@ -82,13 +82,13 @@ namespace my_class {
 					this->remove_first();
 				} else {
 					Node<ListType> *ptr = this->head;
-					while (*ptr->next != p) {
-						ptr = *ptr->next;
+					while (ptr->next != p) {
+						ptr = ptr->next;
 						if (ptr == nullptr) {
 							return;
 						}
 					}
-					*ptr->next = *p->next;
+					ptr->next = *p->next;
 
 				}
 			}

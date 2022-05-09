@@ -14,4 +14,6 @@ int main(){
     a.add_last(15);
     a.add_last(16);
     std::cout << a.length() << std::endl;
+    a.remove(13);
+    std::cout << a.length() << std::endl;
 }

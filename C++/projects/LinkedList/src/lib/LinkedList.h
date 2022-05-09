@@ -93,6 +93,23 @@ namespace my_class {
 				}
 			}
 		}
+		void remove(LT p) {
+			if (this->head != nullptr) {
+				if (p == this->head) {
+					this->remove_first();
+				} else {
+					LinkedListNode<LT> *ptr = this->head;
+					while (ptr->next->data != p) {
+						ptr = ptr->next;
+						if (ptr == nullptr) {
+							return;
+						}
+					}
+					ptr->next = *p->next;
+
+				}
+			}
+		}
 		void remove_current_node() {
 			this->remove(this->current);
 		}

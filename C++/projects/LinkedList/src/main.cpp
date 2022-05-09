@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstddef>
 #include "lib/LinkedList.h"
-#include "lib/Node.h"
+#include "lib/LinkedListNode.h"
 
 using namespace my_class;
 

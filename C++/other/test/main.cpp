@@ -5,7 +5,8 @@ using namespace std;
 // using ll = long long;
 
 int main() {
-  int a;
-  int *b;
-  int *c;
+    int *a = nullptr;
+    int b = 5;
+    a = &b;
+    cout << (bool)a << endl;
 }

@@ -117,7 +117,14 @@ namespace my_class {
 				print(this->current->data);
 			}
 		}
-		void print();
+		void print() {
+			Node<ListType> ptr = this->head;
+			
+			while (ptr != nullptr) {
+				cout << ptr->data << endl;
+				ptr = ptr->next;
+			}
+		}
 	};
 }
 

@@ -21,7 +21,6 @@ namespace my_class {
 		int length() {
 			return this->no;
 		}
-
 		int search(ListType data) {
 			int cnt = 0;
 			Node<ListType> ptr = this->head;
@@ -48,6 +47,7 @@ namespace my_class {
 				while (ptr->next != nullptr) {
 					ptr = ptr->next;
 				}
+				this->no++;
 				ptr->next = this->current = new Node<ListType> (data, nullptr);
 			}
 		}

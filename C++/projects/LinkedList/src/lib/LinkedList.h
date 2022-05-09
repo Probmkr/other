@@ -82,6 +82,7 @@ namespace my_class {
 					this->remove_first();
 				} else {
 					LinkedListNode<LT> *ptr = this->head;
+					LinkedListNode<LT> *delptr = this->head;
 					while (ptr->next != p) {
 						ptr = ptr->next;
 						if (ptr == nullptr) {
@@ -89,24 +90,7 @@ namespace my_class {
 						}
 					}
 					ptr->next = *p->next;
-
-				}
-			}
-		}
-		void remove(LT p) {
-			if (this->head != nullptr) {
-				if (p == this->head) {
-					this->remove_first();
-				} else {
-					LinkedListNode<LT> *ptr = this->head;
-					while (ptr->next->data != p) {
-						ptr = ptr->next;
-						if (ptr == nullptr) {
-							return;
-						}
-					}
-					ptr->next = *p->next;
-
+					delete delptr;
 				}
 			}
 		}

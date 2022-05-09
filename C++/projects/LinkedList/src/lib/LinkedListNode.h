@@ -8,6 +8,7 @@ namespace my_class {
 	public:
 		LinkedListNodeValueType data;
 		LinkedListNode<LinkedListNodeValueType> *next;
+		
 		LinkedListNode(LinkedListNodeValueType data, LinkedListNode<LinkedListNodeValueType> *next = nullptr) {
 			this->data = data;
 			this->next = next;

@@ -2,5 +2,5 @@
 #include "lib/DoubleLinkedList.h"
 
 int main() {
-    std::cout << "hello, world" << endl;
+    std::cout << "hello, world" << std::endl;
 }

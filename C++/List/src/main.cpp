@@ -10,5 +10,5 @@ int main(){
 	LinkedList<int> a;
 	a.add_first(12);
 	a.add_last(13);
-	std::cout << 'a' << std::endl;
+    std::cout << a.length() << std::endl;
 }

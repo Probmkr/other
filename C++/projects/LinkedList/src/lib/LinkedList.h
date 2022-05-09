@@ -7,11 +7,11 @@
 namespace my_class {
 	using namespace std;
 
-	template<typename ListType>
+	template<typename LT>
 	class LinkedList {
 		int no;
-		LinkedListNode<ListType> *head;
-		LinkedListNode<ListType> *current;
+		LinkedListNode<LT> *head;
+		LinkedListNode<LT> *current;
 	public:
 		LinkedList() {
 			this->no = 0;
@@ -21,9 +21,9 @@ namespace my_class {
 		int length() {
 			return this->no;
 		}
-		int search(ListType data) {
+		int search(LT data) {
 			int cnt = 0;
-			LinkedListNode<ListType> ptr = this->head;
+			LinkedListNode<LT> ptr = this->head;
 			while (ptr != nullptr) {
 				if (ptr->data == data) {
 					this->current = ptr;
@@ -31,24 +31,24 @@ namespace my_class {
 				}
 			}
 		}
-		bool contains(ListType data) {
+		bool contains(LT data) {
 			return this->search(data) >= 0;
 		}
-		void add_first(ListType data) {
-			LinkedListNode<ListType> *ptr = this->head;
-			this->head = this->current = new LinkedListNode<ListType> (data, ptr);
+		void add_first(LT data) {
+			LinkedListNode<LT> *ptr = this->head;
+			this->head = this->current = new LinkedListNode<LT> (data, ptr);
 			this->no++;
 		}
-		void add_last(ListType data) {
+		void add_last(LT data) {
 			if (this->head == nullptr) {
 				this->add_first(data);
 			} else {
-				LinkedListNode<ListType> *ptr = this->head;
+				LinkedListNode<LT> *ptr = this->head;
 				while (ptr->next != nullptr) {
 					ptr = ptr->next;
 				}
 				this->no++;
-				ptr->next = this->current = new LinkedListNode<ListType> (data, nullptr);
+				ptr->next = this->current = new LinkedListNode<LT> (data, nullptr);
 			}
 		}
 		void remove_first() {
@@ -63,8 +63,8 @@ namespace my_class {
 				if (this->*head->next == nullptr) {
 					this->remove_first();
 				} else {
-					LinkedListNode<ListType> *ptr = this->head;
-					LinkedListNode<ListType> *pre = this->head;
+					LinkedListNode<LT> *ptr = this->head;
+					LinkedListNode<LT> *pre = this->head;
 
 					while (ptr->next != nullptr) {
 						pre = ptr;
@@ -76,12 +76,12 @@ namespace my_class {
 				}
 			}
 		}
-		void remove(LinkedListNode<ListType> *p) {
+		void remove(LinkedListNode<LT> *p) {
 			if (this->head != nullptr) {
 				if (p == this->head) {
 					this->remove_first();
 				} else {
-					LinkedListNode<ListType> *ptr = this->head;
+					LinkedListNode<LT> *ptr = this->head;
 					while (ptr->next != p) {
 						ptr = ptr->next;
 						if (ptr == nullptr) {
@@ -118,7 +118,7 @@ namespace my_class {
 			}
 		}
 		void print() {
-			LinkedListNode<ListType> ptr = this->head;
+			LinkedListNode<LT> ptr = this->head;
 			
 			while (ptr != nullptr) {
 				cout << ptr->data << endl;

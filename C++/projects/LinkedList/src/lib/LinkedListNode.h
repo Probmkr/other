@@ -3,13 +3,13 @@
 #include <cstddef>
 
 namespace my_class {
-	template<typename LinkedListNodeValueType>
+	template<typename LLVT>
 	class LinkedListNode {
 	public:
-		LinkedListNodeValueType data;
-		LinkedListNode<LinkedListNodeValueType> *next;
+		LLVT data;
+		LinkedListNode<LLVT> *next;
 		
-		LinkedListNode(LinkedListNodeValueType data, LinkedListNode<LinkedListNodeValueType> *next = nullptr) {
+		LinkedListNode(LLVT data, LinkedListNode<LLVT> *next = nullptr) {
 			this->data = data;
 			this->next = next;
 		}

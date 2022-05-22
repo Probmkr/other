@@ -1,0 +1,16 @@
+{
+  "mysqlConnect": {
+    "host": "localhost",
+    "user": "user",
+    "password": "",
+    "database": "database"
+  },
+  "mysqlDevConnect": {
+    "host": "localhost",
+    "user": "user",
+    "password": "",
+    "database": "database"
+  },
+  "develop": false,
+  "developError": false
+}

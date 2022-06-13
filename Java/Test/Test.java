@@ -1,4 +1,4 @@
-import java.util.*;
+package Java.Test;
 
 public class Test {
     public static void main(String[] args) throws Exception {

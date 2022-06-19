@@ -7,7 +7,7 @@ namespace my_class {
     using namespace std;
 
     template<typename LT>
-    class DoubleLinkedList {
+    class DoubleLinkedList {/*
         int no;
         DoubleLinkedListNode<LT> head;
         DoubleLinkedListNode<LT> current;
@@ -18,7 +18,7 @@ namespace my_class {
         }
         int length() {
             return this->no;
-        }
+        }*/
         bool is_empty() {
             return this->head->next == this->head;
         }

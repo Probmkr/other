@@ -3,11 +3,12 @@
 # 78736
 
 import sys
-# maxnum = int(input('enter bigger than 3 > '))
-# maxnum = int(sys.argv[1])
-maxnum = 10000
+#maxnum = 10000
+#maxnum = int(input('enter bigger than 3 > '))
+maxnum = int(sys.argv[1])
 
 count = 0
+allcount = 0
 
 prime = [2]
 
@@ -25,6 +26,8 @@ for i in range(3, maxnum + 1, 2):
     else:
         prime.append(i)
         count += 1
+        allcount += 1
 
 print(prime)
 print(count)
+print(allcount)

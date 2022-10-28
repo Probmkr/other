@@ -1,9 +1,11 @@
 {
     "files.associations": {
+      ".env": "shellscript",
       "*.ejs": "html",
       "ostream": "cpp",
       "stdio.h": "c",
-      "iostream": "cpp"
+      "iostream": "cpp",
+      "ios": "cpp"
     },
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,

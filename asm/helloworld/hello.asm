@@ -25,3 +25,4 @@ _start:
 section .data
         msg     db      'hello, world', 0x0A
         len     equ     $ - msg
+; vim: ft=asm

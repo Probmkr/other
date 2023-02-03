@@ -1,18 +1,24 @@
+global _main
+
 section .data
-	msg db 'Hello, world!', 0x0a
-	len equ $ - msg
+
+str_hello:   db  "Hello World", 0x0a
 
 section .text
-	global _main
+
 _main:
+    mov rax, 0x2000004
 
-	mov rax, 0x2000004
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, len
-	syscall
+    mov rdi, 1
 
+    mov rsi, str_hello
 
-	mov rax, 0x2000001
-	mov rdi, 0
-	syscall
+    mov rdx, 13
+
+    syscall
+
+    mov rax, 0x2000001
+
+    mov rdi, 0
+
+    syscall

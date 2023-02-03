@@ -1,0 +1,30 @@
+     1                                  ;------------------------------------
+     2                                  ; hello.s
+     3                                  ;   nasm -f elf64 hello.s
+     4                                  ;   ld -o hello01 hello.o
+     5                                  ;   ./hello
+     6                                  ;------------------------------------
+     7                                  
+     8                                  bits 64
+     9                                  section .text
+    10                                  global _start
+    11                                  
+    12                                  _start:
+    13 00000000 31C0                            xor     eax, eax
+    14 00000002 89C2                            mov     edx, eax
+    15 00000004 FFC0                            inc     eax         ; sys_write (01)
+    16 00000006 89C7                            mov     edi, eax    ; stdout    (01)
+    17 00000008 B20D                            mov     dl, len     ; length    (13)
+    18 0000000A 48BE-                           mov     rsi, msg    ; address
+    18 0000000C [0000000000000000] 
+    19 00000014 0F05                            syscall
+    20 00000016 31FF                            xor     edi, edi    ; return 0
+    21 00000018 89F8                            mov     eax, edi
+    22 0000001A B03C                            mov     al, 60      ; sys_exit
+    23 0000001C 0F05                            syscall
+    24                                  
+    25                                  section .data
+    26 00000000 68656C6C6F2C20776F-             msg     db      'hello, world', 0x0A
+    26 00000009 726C640A           
+    27                                          len     equ     $ - msg
+    28                                  ; vim: ft=asm

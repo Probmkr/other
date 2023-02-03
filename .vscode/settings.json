@@ -8,7 +8,7 @@
       "ios": "cpp"
     },
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
+    "python.linting.enabled": false,
     "python.linting.pylamaEnabled": false,
     "C_Cpp.errorSquiggles": "Enabled"
 }

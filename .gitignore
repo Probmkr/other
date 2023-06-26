@@ -2,3 +2,4 @@
 .DS_Store
 mysqltest
 node_modules
+a.out
